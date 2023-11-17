@@ -22,12 +22,12 @@
 
 .body {
     background-color: var(--colorWhite);
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 0%;
     .home {
+        height: 100VH;
         display: flex;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
         font-family: var(--font-Castoro);
         .sectionA {
             width: 10%;
@@ -37,14 +37,13 @@
             }
             .cintaC {
                 opacity: 0.2;
-                transform: scaleX(-1);
-                margin-top: -20%;
+                transform: scaleX(-1);               
             }
         }
 
         .sectionB {
             width: 80%;
-            padding-top: 2%;
+            padding-top: 10%;
 
             header {
                 nav {
@@ -72,29 +71,33 @@
                 }
             }
             .mainInformation {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
                 font-family: var(--font-Castoro);
                 .infoLogo {
                     //background-color: rebeccapurple;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    padding-top: 25%;
+                    padding-top: 30%;
                     h1 {
-                        font-size: 1.5rem;
+                        font-size: 1.8rem;
                         color: var(--color10);
                         font-weight: bold;
-                        letter-spacing: 0.1em;
+                        //letter-spacing: 0.1em;
                     }
                     .logotipo {
                         margin: auto;
-                        padding: 5%;
                         padding-top: 0%;
                         margin-top: -4%;
                     }
                     p {
                         font-size: 0.4em;
+                        text-align: center;
                         color: var(--colorBlack);
-                        margin-top: -4%;
+                        
                     }
                 }
                 .botonGroup {
@@ -103,10 +106,10 @@
                     flex-direction: column;
                     justify-content: start;
                     align-items: center;
-                    margin-top: -5%;
+                    padding-top: 30%;
                     .btnContainer {
                         border: 0.1rem solid var(--color10);
-                        width: 60%;
+                        width: 70%;
                         padding: 1%;
                         border-radius: 0.2em;
                         opacity: 0.8;

@@ -21,20 +21,20 @@
 
 .body {
   background-color: var(--colorWhite);
-  padding-left: 2%;
-  padding-right: 2%;
+  padding: 0%;
 }
 
 .body .home {
+  height: 100VH;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: var(--font-Castoro);
 }
 
@@ -51,12 +51,11 @@
   opacity: 0.2;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
-  margin-top: -20%;
 }
 
 .body .home .sectionB {
   width: 80%;
-  padding-top: 2%;
+  padding-top: 10%;
 }
 
 .body .home .sectionB header nav {
@@ -99,6 +98,19 @@
 }
 
 .body .home .sectionB .mainInformation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: var(--font-Castoro);
 }
 
@@ -113,27 +125,25 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 25%;
+  padding-top: 30%;
 }
 
 .body .home .sectionB .mainInformation .infoLogo h1 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--color10);
   font-weight: bold;
-  letter-spacing: 0.1em;
 }
 
 .body .home .sectionB .mainInformation .infoLogo .logotipo {
   margin: auto;
-  padding: 5%;
   padding-top: 0%;
   margin-top: -4%;
 }
 
 .body .home .sectionB .mainInformation .infoLogo p {
   font-size: 0.4em;
+  text-align: center;
   color: var(--colorBlack);
-  margin-top: -4%;
 }
 
 .body .home .sectionB .mainInformation .botonGroup {
@@ -150,12 +160,12 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -5%;
+  padding-top: 30%;
 }
 
 .body .home .sectionB .mainInformation .botonGroup .btnContainer {
   border: 0.1rem solid var(--color10);
-  width: 60%;
+  width: 70%;
   padding: 1%;
   border-radius: 0.2em;
   opacity: 0.8;
