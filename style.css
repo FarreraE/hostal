@@ -25,21 +25,20 @@
 }
 
 .body .home {
-  height: 100VH;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   font-family: var(--font-Castoro);
 }
 
 .body .home .sectionA {
-  width: 10%;
+  width: 12%;
 }
 
 .body .home .sectionA .cintaA {
@@ -54,8 +53,8 @@
 }
 
 .body .home .sectionB {
-  width: 80%;
-  padding-top: 10%;
+  width: 100%;
+  padding-top: 20%;
 }
 
 .body .home .sectionB header nav {
@@ -108,9 +107,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   font-family: var(--font-Castoro);
 }
 
@@ -125,7 +124,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30%;
+  padding-top: 35%;
 }
 
 .body .home .sectionB .mainInformation .infoLogo h1 {
@@ -154,18 +153,18 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -webkit-box-pack: stretch;
+      -ms-flex-pack: stretch;
+          justify-content: stretch;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 30%;
+  padding-top: 0%;
 }
 
 .body .home .sectionB .mainInformation .botonGroup .btnContainer {
   border: 0.1rem solid var(--color10);
-  width: 70%;
+  width: 100%;
   padding: 1%;
   border-radius: 0.2em;
   opacity: 0.8;
@@ -178,6 +177,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 30%;
 }
 
 .body .home .sectionB .mainInformation .botonGroup .btnContainer .CTAbtn {
@@ -201,7 +201,7 @@
 }
 
 .body .home .sectionB .mainInformation .botonGroup .contactoIcon {
-  width: 50%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -215,7 +215,7 @@
 }
 
 .body .home .sectionB .mainInformation .botonGroup .contactoIcon .icon {
-  width: 15%;
+  width: 10%;
   opacity: 0.5;
 }
 
