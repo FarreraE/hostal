@@ -20,22 +20,25 @@
 </head>
 
 <body class="body">
+    <!-- HEAD -->
     <section class="container-fluid home">
         <div class="sectionA">
-            <img class="cinta" src="img/patronLateral.svg" alt="">
+            <img class="cintaA" src="img/patronLateral.svg" alt="">
         </div>
         <div class="sectionB">
             <header data-aos="fade-down">
                 <nav>
                     <a href="#">Inicio</a>
                     <a href="#">Galería</a>
-                    <img class="imagotipo" src="img/isotipoAmarillo.svg" alt="">
+                    <div class="containerimagotipo">
+                        <img class="imagotipo" src="img/isotipoAmarillo.svg" alt="">
+                    </div>
                     <a href="#">Nosotros</a>
                     <a href="#">Contacto</a>
                 </nav>
             </header>
             <div class="container-fluid mainInformation">
-                <div class="mainInformationA">
+                <div class="infoLogo">
                     <h1 data-aos="fade-down">Hostal</h1>
                     <img class="logotipo" src="img/logoAzul.svg" alt="" data-aos="zoom-in"
                         data-aos-easing="ease-in-sine">
@@ -43,7 +46,7 @@
                 </div>
                 <div class="container botonGroup" data-aos="fade-up">
                     <div class="container btnContainer">
-                        <button class="btn btn-primary">RESERVA HOY</button>
+                        <button class="CTAbtn">RESERVA HOY</button>
                     </div>
                     <div class="contactoIcon">
                         <img class="icon" src="img/whatsapp.svg" alt="">
@@ -54,40 +57,37 @@
                 </div>
             </div>
         </div>
-        <div class="sectionC">
-            <img class="cinta" src="img/patronLateral.svg" alt="">
+        <div class="sectionA">
+            <img class="cintaC" src="img/patronLateral.svg" alt="">
         </div>
     </section>
+    <!-- GALERY -->
     <section class="container-fluid gallery"></section>
-    <div class="container-fluid nosotros">
-        <div class="row">
+    <!-- NOSOTROS -->
+    <section class=" nosotros">
 
-            <div class="col-12 isotipo" data-aos="zoom-in-down">
-                <img class="logo" src="img/isotipoGris.svg" alt="">
-            </div>
-            <div class="col-1"></div>
-            <div class="col-10 descripcion" data-aos="zoom-out" data-aos-offset="300">
-                <img class="logo" src="img/logoAzul.svg" alt="" data-aos="zoom-out">
-                <p>Bienvenido a Hostal La Taberna en Arenas de San Pedro, Ávila. Disfruta de una estancia acogedora y
-                    cómoda en nuestro hostal, situado en un encantador rincón de la provincia de Ávila, España.
+        <div class="isotipo" data-aos="zoom-in-down">
+            <img class="logo" src="img/isotipoGris.svg" alt="">
+        </div>
 
-                    Ofrecemos habitaciones confortables, un ambiente acogedor y una ubicación ideal para explorar la
-                    belleza natural de la Sierra de Gredos. Además, para hacer tu experiencia aún más placentera,
-                    contamos con un bar y deliciosa comida disponible. ¡Reserva tu estancia con nosotros y descubre lo
-                    que esta maravillosa región tiene para ofrecer!</p>
-                <div class="container botonGroup">
-                    <div class="container btnContainer">
-                        <button class="btnCTA">CONSULTA DISPONIBILIDAD</button>
-                    </div>
-                </div>
+        <div class="descripcion" data-aos="zoom-out" data-aos-offset="300">
+            <img class="logo" src="img/logoAzul.svg" alt="" data-aos="zoom-out">
+            <p>Bienvenido a Hostal La Taberna en Arenas de San Pedro, Ávila. Disfruta de una estancia acogedora y
+                cómoda en nuestro hostal, situado en un encantador rincón de la provincia de Ávila, España.
 
-            </div>
-
+                Ofrecemos habitaciones confortables, un ambiente acogedor y una ubicación ideal para explorar la
+                belleza natural de la Sierra de Gredos. Además, para hacer tu experiencia aún más placentera,
+                contamos con un bar y deliciosa comida disponible. ¡Reserva tu estancia con nosotros y descubre lo
+                que esta maravillosa región tiene para ofrecer!</p>
 
         </div>
-    </div>
-    </section>
 
+        <div class="container btnContainer">
+            <button class="CTAbtn">CONSULTA DISPONIBILIDAD</button>
+        </div>
+
+    </section>
+    <!-- SERVICIOS -->
     <section class="container-fluid servicios">
 
         <h2 class="h2Title">HABITACIONES</h2>
@@ -167,7 +167,7 @@
             </div>
         </div>
     </section>
-
+    <!-- ALOJAMIENTOS -->
     <section class="container-fluid alojamientos">
         <h1>OTROS ALOJAMIENTOS</h1>
 
@@ -199,6 +199,7 @@
         </div>
 
     </section>
+    <!-- CONTACTO -->
     <section class="container-fluid contacto">
         <div class="row">
             <div class="col-12 colA">
@@ -255,6 +256,7 @@
         </div>
 
     </section>
+    <!-- FOOTER -->
     <footer class="container-fluid">
         <nav>
             <a href="#">Inicio</a>

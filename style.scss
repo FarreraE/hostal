@@ -22,7 +22,6 @@
 
 .body {
     background-color: var(--colorWhite);
-    background-color: red;
     padding-left: 2%;
     padding-right: 2%;
     .home {
@@ -31,81 +30,101 @@
         align-items: flex-start;
         font-family: var(--font-Castoro);
         .sectionA {
-            width: 5%;
-            .cinta {
+            width: 10%;
+            .cintaA {
                 opacity: 0.2;
+                margin-top: 0%;
+            }
+            .cintaC {
+                opacity: 0.2;
+                transform: scaleX(-1);
                 margin-top: -20%;
             }
         }
+
         .sectionB {
-            width: 90%;
+            width: 80%;
             padding-top: 2%;
+
             header {
-                width: 50%;
-                margin: auto;
                 nav {
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                }
-
-                nav a {
-                    font-family: var(--font-Quicksand);
-                    color: var(--color10);
-                    text-decoration: none;
-                    font-size: 1.2rem;
-                }
-                .imagotipo {
-                    width: 8%;
+                    a {
+                        font-family: var(--font-Quicksand);
+                        color: var(--color10);
+                        text-decoration: none;
+                        font-size: 0.6rem;
+                        width: 20%;
+                        text-align: center;
+                        font-weight: bold;
+                    }
+                    .containerimagotipo {
+                        width: 20%;
+                        display: flex;
+                        justify-content: center;
+                        .imagotipo {
+                            width: 40%;
+                            align-self: center;
+                        }
+                    }
                 }
             }
             .mainInformation {
-                .mainInformationA {
+                font-family: var(--font-Castoro);
+                .infoLogo {
                     //background-color: rebeccapurple;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    padding-top: 10%;
+                    padding-top: 25%;
                     h1 {
-                        font-size: 5rem;
+                        font-size: 1.5rem;
                         color: var(--color10);
                         font-weight: bold;
-                        letter-spacing: 0.5rem;
-                    }
-                    p {
-                        font-size: 0.9rem;
-                        color: var(--colorBlack);
+                        letter-spacing: 0.1em;
                     }
                     .logotipo {
                         margin: auto;
-                        width: 50%;
-                        margin-top: -2%;
+                        padding: 5%;
+                        padding-top: 0%;
+                        margin-top: -4%;
+                    }
+                    p {
+                        font-size: 0.4em;
+                        color: var(--colorBlack);
+                        margin-top: -4%;
                     }
                 }
-
                 .botonGroup {
                     //background-color: red;
                     display: flex;
                     flex-direction: column;
+                    justify-content: start;
                     align-items: center;
+                    margin-top: -5%;
                     .btnContainer {
                         border: 0.1rem solid var(--color10);
-                        width: 25%;
-                        padding: 0.5%;
-                        border-radius: 0.5rem;
+                        width: 60%;
+                        padding: 1%;
+                        border-radius: 0.2em;
                         opacity: 0.8;
-                        .btn {
-                            font-size: 1.5rem;
-                            border-radius: 0.5rem;
-                            background-color: var(--color10);
-                            letter-spacing: 0.2rem;
-                            font-weight: 550;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        .CTAbtn {
+                            font-size: 0.7em;
                             border: none;
+                            border-radius: inherit;
+                            background-color: var(--color10);
                             width: 100%;
-                            padding-top: 2%;
-                            padding-bottom: 1%;
+                            padding-top: 3%;
+                            color: var(--colorWhite);
+
+                            letter-spacing: 0.02rem;
                         }
-                        .btn:hover {
+                        .CTAbtn:hover {
                             background-color: var(--color60);
                         }
                     }
@@ -114,12 +133,13 @@
                         border: 0.1rem solid var(--color60);
                     }
                     .contactoIcon {
-                        width: 40%;
+                        width: 50%;
                         display: flex;
                         justify-content: space-between;
-                        padding-top: 2%;
+                        align-items: center;
+                        padding-top: 5%;
                         .icon {
-                            width: 10%;
+                            width: 15%;
                             opacity: 0.5;
                         }
                         .icon:hover {
@@ -128,14 +148,6 @@
                         }
                     }
                 }
-            }
-        }
-        .sectionC {
-            width: 5%;
-            .cinta {
-                opacity: 0.2;
-                transform: scaleX(-1);
-                margin-top: -20%;
             }
         }
     }
@@ -148,7 +160,6 @@
         font-family: var(--font-Quicksand);
         padding: 5%;
         .isotipo {
-            margin-top: 4%;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -163,46 +174,59 @@
             flex-direction: column;
             align-items: center;
             .logo {
+                padding-top: 5%;
                 width: 70%;
             }
             p {
-                padding-top: 2%;
-                font-size: 1.1em;
-                text-align: center;
-                letter-spacing: 0.05rem;
+                padding-top: 5%;
+                font-size: 0.8em;
+                text-align: justify;
             }
-            .botonGroup {
-                //background-color: red;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                .btnContainer {
-                    border: 0.1rem solid var(--color10);
-                    width: 70%;
-                    padding: 0.5%;
-                    border-radius: 0.5rem;
-                    opacity: 0.8;
-                    .btnCTA {
-                        font-size: 1rem;
-                        border-radius: 0.5rem;
-                        background-color: var(--color10);
-                        color: var(--colorWhite);
-                        letter-spacing: 0.2rem;
-                        font-weight: 550;
-                        border: none;
-                        width: 100%;
-                        padding-top: 2%;
-                        padding-bottom: 1%;
-                        font-family: var(--font-Castoro);
-                    }
-                    .btnCTA:hover {
-                        background-color: var(--color60);
-                    }
-                }
-                .btnContainer:hover {
-                    opacity: 1;
-                    border: 0.1rem solid var(--color60);
-                }
+        }
+
+        .btnContainer {
+           border: 0.1rem solid var(--color10);
+            width: 70%;
+            padding: 1%;
+            border-radius: 0.2em;
+            opacity: 0.8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: var(--font-Castoro);
+            .CTAbtn {
+                font-size: 0.7em;
+                border: none;
+                border-radius: inherit;
+                background-color: var(--color10);
+                width: 100%;
+                padding-top: 2%;
+                color: var(--colorWhite);
+                //font-weight: bold;
+                letter-spacing: 0.1rem;
+
+            }
+            .CTAbtn:hover {
+                background-color: var(--color60);
+            }
+        }
+        .btnContainer:hover {
+            opacity: 1;
+            border: 0.1rem solid var(--color60);
+        }
+        .contactoIcon {
+            width: 50%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 5%;
+            .icon {
+                width: 15%;
+                opacity: 0.5;
+            }
+            .icon:hover {
+                opacity: 1;
+                scale: 1.2;
             }
         }
     }
@@ -539,7 +563,7 @@
         }
     }
 }
-@import "_responsive.scss";
+//@import "_responsive.scss";
 
 /*
 Apartamento Ático La Taberna

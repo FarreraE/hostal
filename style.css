@@ -21,7 +21,6 @@
 
 .body {
   background-color: var(--colorWhite);
-  background-color: red;
   padding-left: 2%;
   padding-right: 2%;
 }
@@ -40,22 +39,24 @@
 }
 
 .body .home .sectionA {
-  width: 5%;
+  width: 10%;
 }
 
-.body .home .sectionA .cinta {
+.body .home .sectionA .cintaA {
   opacity: 0.2;
+  margin-top: 0%;
+}
+
+.body .home .sectionA .cintaC {
+  opacity: 0.2;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
   margin-top: -20%;
 }
 
 .body .home .sectionB {
-  width: 90%;
+  width: 80%;
   padding-top: 2%;
-}
-
-.body .home .sectionB header {
-  width: 50%;
-  margin: auto;
 }
 
 .body .home .sectionB header nav {
@@ -74,14 +75,34 @@
   font-family: var(--font-Quicksand);
   color: var(--color10);
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 0.6rem;
+  width: 20%;
+  text-align: center;
+  font-weight: bold;
 }
 
-.body .home .sectionB header .imagotipo {
-  width: 8%;
+.body .home .sectionB header nav .containerimagotipo {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.body .home .sectionB .mainInformation .mainInformationA {
+.body .home .sectionB header nav .containerimagotipo .imagotipo {
+  width: 40%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.body .home .sectionB .mainInformation {
+  font-family: var(--font-Castoro);
+}
+
+.body .home .sectionB .mainInformation .infoLogo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,25 +113,27 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-top: 10%;
+  padding-top: 25%;
 }
 
-.body .home .sectionB .mainInformation .mainInformationA h1 {
-  font-size: 5rem;
+.body .home .sectionB .mainInformation .infoLogo h1 {
+  font-size: 1.5rem;
   color: var(--color10);
   font-weight: bold;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.1em;
 }
 
-.body .home .sectionB .mainInformation .mainInformationA p {
-  font-size: 0.9rem;
-  color: var(--colorBlack);
-}
-
-.body .home .sectionB .mainInformation .mainInformationA .logotipo {
+.body .home .sectionB .mainInformation .infoLogo .logotipo {
   margin: auto;
-  width: 50%;
-  margin-top: -2%;
+  padding: 5%;
+  padding-top: 0%;
+  margin-top: -4%;
+}
+
+.body .home .sectionB .mainInformation .infoLogo p {
+  font-size: 0.4em;
+  color: var(--colorBlack);
+  margin-top: -4%;
 }
 
 .body .home .sectionB .mainInformation .botonGroup {
@@ -121,32 +144,44 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -5%;
+}
+
+.body .home .sectionB .mainInformation .botonGroup .btnContainer {
+  border: 0.1rem solid var(--color10);
+  width: 60%;
+  padding: 1%;
+  border-radius: 0.2em;
+  opacity: 0.8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.body .home .sectionB .mainInformation .botonGroup .btnContainer {
-  border: 0.1rem solid var(--color10);
-  width: 25%;
-  padding: 0.5%;
-  border-radius: 0.5rem;
-  opacity: 0.8;
-}
-
-.body .home .sectionB .mainInformation .botonGroup .btnContainer .btn {
-  font-size: 1.5rem;
-  border-radius: 0.5rem;
-  background-color: var(--color10);
-  letter-spacing: 0.2rem;
-  font-weight: 550;
+.body .home .sectionB .mainInformation .botonGroup .btnContainer .CTAbtn {
+  font-size: 0.7em;
   border: none;
+  border-radius: inherit;
+  background-color: var(--color10);
   width: 100%;
-  padding-top: 2%;
-  padding-bottom: 1%;
+  padding-top: 3%;
+  color: var(--colorWhite);
+  letter-spacing: 0.02rem;
 }
 
-.body .home .sectionB .mainInformation .botonGroup .btnContainer .btn:hover {
+.body .home .sectionB .mainInformation .botonGroup .btnContainer .CTAbtn:hover {
   background-color: var(--color60);
 }
 
@@ -156,35 +191,27 @@
 }
 
 .body .home .sectionB .mainInformation .botonGroup .contactoIcon {
-  width: 40%;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 2%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5%;
 }
 
 .body .home .sectionB .mainInformation .botonGroup .contactoIcon .icon {
-  width: 10%;
+  width: 15%;
   opacity: 0.5;
 }
 
 .body .home .sectionB .mainInformation .botonGroup .contactoIcon .icon:hover {
   opacity: 1;
   scale: 1.2;
-}
-
-.body .home .sectionC {
-  width: 5%;
-}
-
-.body .home .sectionC .cinta {
-  opacity: 0.2;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  margin-top: -20%;
 }
 
 .body .gallery {
@@ -199,7 +226,6 @@
 }
 
 .body .nosotros .isotipo {
-  margin-top: 4%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -233,58 +259,76 @@
 }
 
 .body .nosotros .descripcion .logo {
+  padding-top: 5%;
   width: 70%;
 }
 
 .body .nosotros .descripcion p {
-  padding-top: 2%;
-  font-size: 1.1em;
-  text-align: center;
-  letter-spacing: 0.05rem;
+  padding-top: 5%;
+  font-size: 0.8em;
+  text-align: justify;
 }
 
-.body .nosotros .descripcion .botonGroup {
+.body .nosotros .btnContainer {
+  border: 0.1rem solid var(--color10);
+  width: 70%;
+  padding: 1%;
+  border-radius: 0.2em;
+  opacity: 0.8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.body .nosotros .descripcion .botonGroup .btnContainer {
-  border: 0.1rem solid var(--color10);
-  width: 70%;
-  padding: 0.5%;
-  border-radius: 0.5rem;
-  opacity: 0.8;
-}
-
-.body .nosotros .descripcion .botonGroup .btnContainer .btnCTA {
-  font-size: 1rem;
-  border-radius: 0.5rem;
-  background-color: var(--color10);
-  color: var(--colorWhite);
-  letter-spacing: 0.2rem;
-  font-weight: 550;
-  border: none;
-  width: 100%;
-  padding-top: 2%;
-  padding-bottom: 1%;
   font-family: var(--font-Castoro);
 }
 
-.body .nosotros .descripcion .botonGroup .btnContainer .btnCTA:hover {
+.body .nosotros .btnContainer .CTAbtn {
+  font-size: 0.7em;
+  border: none;
+  border-radius: inherit;
+  background-color: var(--color10);
+  width: 100%;
+  padding-top: 2%;
+  color: var(--colorWhite);
+  letter-spacing: 0.1rem;
+}
+
+.body .nosotros .btnContainer .CTAbtn:hover {
   background-color: var(--color60);
 }
 
-.body .nosotros .descripcion .botonGroup .btnContainer:hover {
+.body .nosotros .btnContainer:hover {
   opacity: 1;
   border: 0.1rem solid var(--color60);
+}
+
+.body .nosotros .contactoIcon {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 5%;
+}
+
+.body .nosotros .contactoIcon .icon {
+  width: 15%;
+  opacity: 0.5;
+}
+
+.body .nosotros .contactoIcon .icon:hover {
+  opacity: 1;
+  scale: 1.2;
 }
 
 .body .servicios {
@@ -743,357 +787,6 @@
 
 .body footer .contactoIcon .icon {
   width: 10%;
-}
-
-@media (min-width: 1px) {
-  /* Estilos específicos para dispositivos pequeños */
-  .body {
-    background-color: var(--colorWhite);
-    padding-left: 0%;
-    padding-right: 0%;
-  }
-  .body .home .sectionA {
-    width: 6%;
-  }
-  .body .home .sectionA .cinta {
-    opacity: 0.2;
-    margin-top: -1%;
-  }
-  .body .home .sectionB {
-    width: 100%;
-    padding-top: 5%;
-  }
-  .body .home .sectionB header {
-    width: 90%;
-  }
-  .body .home .sectionB header nav a {
-    font-size: 1.2rem;
-  }
-  .body .home .sectionB .mainInformation .mainInformationA h1 {
-    font-size: 2.5rem;
-    color: var(--color10);
-    font-weight: bold;
-    letter-spacing: 0rem;
-  }
-  .body .home .sectionB .mainInformation .mainInformationA p {
-    font-size: 0.6rem;
-  }
-  .body .home .sectionB .mainInformation .mainInformationA .logotipo {
-    margin: auto;
-    width: 70%;
-    margin-top: -2%;
-  }
-  .body .home .sectionB .mainInformation .botonGroup .btnContainer {
-    width: 50%;
-  }
-  .body .home .sectionB .mainInformation .botonGroup .btnContainer .btn {
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
-  }
-  .body .home .sectionB .mainInformation .botonGroup .contactoIcon {
-    width: 60%;
-    padding-top: 4%;
-  }
-  .body .home .sectionB .mainInformation .botonGroup .contactoIcon .icon {
-    width: 8%;
-  }
-  .body .home .sectionC {
-    width: 6%;
-  }
-  .body .home .sectionC .cinta {
-    margin-top: -1%;
-  }
-  .body .gallery {
-    background-color: var(--color60);
-    height: 300px;
-    margin-top: 2%;
-  }
-  .body .nosotros {
-    padding: 5%;
-    font-size: 1rem;
-  }
-  .body .nosotros .isotipo {
-    margin-top: 4%;
-  }
-  .body .nosotros .isotipo .logo {
-    opacity: 0.5;
-    width: 1%;
-    scale: 0.6;
-  }
-  .body .nosotros .descripcion p {
-    padding-top: 5%;
-    letter-spacing: 0rem;
-  }
-  .body .servicios {
-    padding: 5%;
-    padding-top: 2%;
-    font-size: 0.9rem;
-  }
-  .body .servicios .h2Title {
-    font-family: var(--font-Castoro);
-    color: var(--color60);
-    text-align: center;
-    font-size: 4rem;
-    font-weight: bold;
-  }
-  .body .servicios .icon {
-    padding: 2%;
-    width: 25%;
-    opacity: 0.2;
-  }
-  .body .servicios .topContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .body .servicios .topContainer p {
-    font-size: 1rem;
-    text-align: center;
-    letter-spacing: 0.1rem;
-    border-radius: 0.5rem;
-    width: 80%;
-    margin: auto;
-  }
-  .body .servicios .end {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
-    width: 100%;
-  }
-  .body .servicios .end .banner {
-    width: 0%;
-    display: none;
-  }
-  .body .servicios .end .btnContainer {
-    border: 0.1rem solid var(--color10);
-    width: 80%;
-    padding: 0.5%;
-    border-radius: 0.5rem;
-    opacity: 0.8;
-    margin-top: 2%;
-  }
-  .body .servicios .end .btnContainer .btnCTA {
-    font-size: 1rem;
-    border-radius: 0.5rem;
-    background-color: var(--color10);
-    letter-spacing: 0.2rem;
-    font-weight: 550;
-    border: none;
-    width: 100%;
-    padding-top: 2%;
-    padding-bottom: 1%;
-    font-family: var(--font-Castoro);
-  }
-  .body .servicios .end .btnContainer .btnCTA:hover {
-    background-color: var(--color60);
-    opacity: 1;
-  }
-  .body .servicios .end .btnContainer:hover {
-    opacity: 1;
-  }
-  .body .servicios .iconGroup {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    padding: 2%;
-    margin-top: 2%;
-  }
-  .body .servicios .iconGroup .iconService {
-    width: 25%;
-    opacity: 0.5;
-    padding: 5%;
-  }
-  .body .servicios .iconGroup .iconService:hover {
-    opacity: 1;
-  }
-  .body .servicios .habitaciones {
-    padding: 1%;
-    margin: auto;
-  }
-  .body .servicios .habitaciones .descripcion {
-    padding: 2%;
-  }
-  .body .servicios .habitaciones .descripcion h3 {
-    font-family: var(--font-Castoro);
-    color: var(--color60);
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  .body .servicios .habitaciones .descripcion p {
-    padding-top: 2%;
-    font-size: 0.8em;
-    text-align: center;
-    letter-spacing: 0.05rem;
-    font-family: var(--font-Quicksand);
-  }
-  .body .servicios .habitaciones .descripcion .btnContainer {
-    width: 60%;
-  }
-  .body .servicios .habitaciones .descripcion .btnContainer .btn {
-    font-size: 1rem;
-    width: 100%;
-  }
-  .body .servicios .habitaciones .barras {
-    border: none;
-  }
-  .body .alojamientos {
-    border-radius: 0.5rem;
-    padding: 0%;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .body .alojamientos h1 {
-    text-align: center;
-    font-family: var(--font-Castoro);
-    color: var(--color60);
-    font-weight: bold;
-  }
-  .body .alojamientos .itemGroup {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-radius: 0.5rem;
-  }
-  .body .alojamientos .itemGroup .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 50%;
-  }
-  .body .alojamientos .itemGroup .item .icon {
-    width: 30%;
-  }
-  .body .alojamientos .itemGroup .item p {
-    font-size: 1rem;
-    text-align: center;
-    color: var(--color10);
-    margin-top: -15%;
-  }
-  .body footer {
-    border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    padding: 2%;
-  }
-  .body footer nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 80%;
-  }
-  .body footer nav a {
-    font-family: var(--font-Quicksand);
-    color: var(--color10);
-    text-decoration: none;
-    font-size: 1.4rem;
-  }
-  .body footer p {
-    color: var(--color10);
-    margin-top: 4%;
-    font-size: 0.9rem;
-  }
-  .body footer .cometa {
-    margin-top: 2%;
-  }
-  .body footer .imagotipo {
-    width: 5%;
-  }
-  .body footer .contactoIcon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 50%;
-    margin-top: 0%;
-  }
-  .body footer .contactoIcon .icon {
-    width: 10%;
-  }
-}
-
-/* Estilos para dispositivos medianos (MD) */
-@media (min-width: 768px) {
-  /* Estilos específicos para dispositivos medianos */
-  .body {
-    background-color: green;
-  }
-}
-
-/* Estilos para dispositivos grandes (LG y XL) */
-@media (min-width: 992px) {
-  /* Estilos específicos para dispositivos grandes */
-  .body {
-    background-color: blue;
-  }
-}
-
-/* Estilos para dispositivos grandes (LG y XL) */
-@media (min-width: 1200px) {
-  /* Estilos específicos para dispositivos grandes */
-  .body {
-    background-color: yellow;
-  }
 }
 
 /*
