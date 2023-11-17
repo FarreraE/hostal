@@ -181,14 +181,14 @@
 }
 
 .body .home .sectionB .mainInformation .botonGroup .btnContainer .CTAbtn {
-  font-size: 0.7em;
+  font-size: 1.2em;
+  letter-spacing: 0.05rem;
   border: none;
   border-radius: inherit;
   background-color: var(--color10);
   width: 100%;
   padding-top: 3%;
   color: var(--colorWhite);
-  letter-spacing: 0.02rem;
 }
 
 .body .home .sectionB .mainInformation .botonGroup .btnContainer .CTAbtn:hover {
@@ -205,9 +205,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -215,7 +214,7 @@
 }
 
 .body .home .sectionB .mainInformation .botonGroup .contactoIcon .icon {
-  width: 10%;
+  width: 12%;
   opacity: 0.5;
 }
 
