@@ -25,7 +25,7 @@
     padding-left: 2%;
     padding-right: 2%;
     .home {
-        //height: 100VH;
+        height: 100VH;
         display: flex;
         justify-content: center;
         align-items: stretch;
@@ -273,73 +273,76 @@
                 opacity: 1;
             }
         }
-
-        h2 {
-            font-family: var(--font-Castoro);
-            color: var(--color60);
-            text-align: center;
-            font-size: 2rem;
-            font-weight: bold;
-            padding-top: 10%;
-        }
-        p {
-            padding: 5%;
-            font-size: 1em;
-            letter-spacing: 0.05em;
-            text-align: center;
-            margin: auto;
-            background-color: rgba(218, 149, 40, 0.1);
-            border: var(--color10) solid 0.1rem;
+        .descripcionGeneral {
+            //border-top: var(--color10) solid 0.1rem;
+            //border-bottom: var(--color10) solid 0.1rem;
             border-radius: 0.5rem;
-        }
+            padding-bottom: 10%;
+            h2 {
+                font-family: var(--font-Castoro);
+                color: var(--color60);
+                text-align: center;
+                font-size: 2rem;
+                font-weight: bold;
+                padding-top: 10%;
+            }
+            p {
+                padding: 5%;
+                font-size: 1em;
+                letter-spacing: 0.05em;
+                text-align: center;
+                margin: auto;
+                // background-color: rgba(218, 149, 40, 0.1);
+               
+            }
 
-        .botonGroup {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .banner {
-                width: 30%;
-                opacity: 0.2;
-                margin-top: 1.5%;
-                display: none;
-            }
-            .b2 {
-                transform: scaleX(-1);
-            }
-            .btnContainer {
-                border: 0.1rem solid var(--color10);
-                width: 80%;
-                padding: 1.5%;
-                border-radius: 0.2em;
-                opacity: 0.8;
+            .botonGroup {
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: 5%;
-                //font-family: var(--font-Castoro);
-                .CTAbtn {
-                    font-size: 1.2em;
-                    letter-spacing: 0.1rem;
-                    border: none;
-                    border-radius: inherit;
-                    background-color: var(--color10);
-                    width: 100%;
-                    padding-top: 2%;
-                    padding-bottom: 2%;
-                    color: var(--colorWhite);
-                    //font-weight: bold;
+                .banner {
+                    width: 30%;
+                    opacity: 0.2;
+                    margin-top: 1.5%;
+                    display: none;
                 }
-                .CTAbtn:hover {
-                    background-color: var(--color60);
+                .b2 {
+                    transform: scaleX(-1);
                 }
-            }
+                .btnContainer {
+                    border: 0.1rem solid var(--color10);
+                    width: 80%;
+                    padding: 1.5%;
+                    border-radius: 0.2em;
+                    opacity: 0.8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 5%;
+                    //font-family: var(--font-Castoro);
+                    .CTAbtn {
+                        font-size: 1.2em;
+                        letter-spacing: 0.1rem;
+                        border: none;
+                        border-radius: inherit;
+                        background-color: var(--color10);
+                        width: 100%;
+                        padding-top: 2%;
+                        padding-bottom: 2%;
+                        color: var(--colorWhite);
+                        //font-weight: bold;
+                    }
+                    .CTAbtn:hover {
+                        background-color: var(--color60);
+                    }
+                }
 
-            .btnContainer:hover {
-                opacity: 1;
-                border: 0.1rem solid var(--color60);
+                .btnContainer:hover {
+                    opacity: 1;
+                    border: 0.1rem solid var(--color60);
+                }
             }
         }
-
         .habitaciones {
             display: flex;
             justify-content: space-between;
@@ -404,11 +407,11 @@
     }
     .alojamientos {
         padding-top: 10%;
-
+        border-radius: 0.5rem;
         h3 {
             text-align: center;
             font-family: var(--font-Castoro);
-            color: var(--color60);
+            color: var(--color10);
             font-weight: bold;
         }
         .itemGroup {
@@ -417,7 +420,7 @@
             padding-bottom: 10%;
             //border: #da9528 solid 0.15em;
             border-radius: 0.5rem;
-            background-color: var(--color60);
+            
             .item {
                 display: flex;
                 justify-content: center;
@@ -591,7 +594,7 @@
         p {
             color: var(--colorBlack);
             margin-top: 4%;
-            font-size: 0.7rem;            
+            font-size: 0.7rem;
             width: 100%;
             text-align: center;
             opacity: 0.5;
@@ -599,7 +602,7 @@
         .cometa {
             margin-top: 5%;
         }
-     
+
         .contactoIcon {
             display: flex;
             flex-direction: row;

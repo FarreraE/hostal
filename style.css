@@ -26,6 +26,7 @@
 }
 
 .body .home {
+  height: 100VH;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,7 +385,12 @@
   opacity: 1;
 }
 
-.body .servicios h2 {
+.body .servicios .descripcionGeneral {
+  border-radius: 0.5rem;
+  padding-bottom: 10%;
+}
+
+.body .servicios .descripcionGeneral h2 {
   font-family: var(--font-Castoro);
   color: var(--color60);
   text-align: center;
@@ -393,18 +399,15 @@
   padding-top: 10%;
 }
 
-.body .servicios p {
+.body .servicios .descripcionGeneral p {
   padding: 5%;
   font-size: 1em;
   letter-spacing: 0.05em;
   text-align: center;
   margin: auto;
-  background-color: rgba(218, 149, 40, 0.1);
-  border: var(--color10) solid 0.1rem;
-  border-radius: 0.5rem;
 }
 
-.body .servicios .botonGroup {
+.body .servicios .descripcionGeneral .botonGroup {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -416,19 +419,19 @@
           align-items: center;
 }
 
-.body .servicios .botonGroup .banner {
+.body .servicios .descripcionGeneral .botonGroup .banner {
   width: 30%;
   opacity: 0.2;
   margin-top: 1.5%;
   display: none;
 }
 
-.body .servicios .botonGroup .b2 {
+.body .servicios .descripcionGeneral .botonGroup .b2 {
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
 }
 
-.body .servicios .botonGroup .btnContainer {
+.body .servicios .descripcionGeneral .botonGroup .btnContainer {
   border: 0.1rem solid var(--color10);
   width: 80%;
   padding: 1.5%;
@@ -446,7 +449,7 @@
   margin-top: 5%;
 }
 
-.body .servicios .botonGroup .btnContainer .CTAbtn {
+.body .servicios .descripcionGeneral .botonGroup .btnContainer .CTAbtn {
   font-size: 1.2em;
   letter-spacing: 0.1rem;
   border: none;
@@ -458,11 +461,11 @@
   color: var(--colorWhite);
 }
 
-.body .servicios .botonGroup .btnContainer .CTAbtn:hover {
+.body .servicios .descripcionGeneral .botonGroup .btnContainer .CTAbtn:hover {
   background-color: var(--color60);
 }
 
-.body .servicios .botonGroup .btnContainer:hover {
+.body .servicios .descripcionGeneral .botonGroup .btnContainer:hover {
   opacity: 1;
   border: 0.1rem solid var(--color60);
 }
@@ -545,12 +548,13 @@
 
 .body .alojamientos {
   padding-top: 10%;
+  border-radius: 0.5rem;
 }
 
 .body .alojamientos h3 {
   text-align: center;
   font-family: var(--font-Castoro);
-  color: var(--color60);
+  color: var(--color10);
   font-weight: bold;
 }
 
@@ -559,7 +563,6 @@
   padding-top: 10%;
   padding-bottom: 10%;
   border-radius: 0.5rem;
-  background-color: var(--color60);
 }
 
 .body .alojamientos .itemGroup .item {

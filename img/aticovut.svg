@@ -11,10 +11,9 @@
 	.st5{font-size:170.4382px;}
 	.st6{font-family:'DRAGONFIRE';}
 	.st7{font-size:32.1949px;}
-	.st8{fill:#F2F2F2;stroke:#F2F2F2;stroke-miterlimit:10;}
-	.st9{fill:#F2F2F2;stroke:#F2F2F2;stroke-width:3;stroke-miterlimit:10;}
-	.st10{font-size:162.7435px;}
-	.st11{letter-spacing:16;}
+	.st8{fill:#0756A1;stroke:#0756A1;stroke-width:3;stroke-miterlimit:10;}
+	.st9{font-size:162.7435px;}
+	.st10{letter-spacing:15;}
 </style>
 <g id="Layer_1_2_" class="st0">
 	<g id="Layer_1_1_" class="st1">
@@ -179,7 +178,8 @@
 			<path class="st8" d="M94.5,21l-13.3,8.3c-0.6,0.8-1.5,1.4-2.6,1.5c-0.7,0-1.3-0.4-1.6-0.9c-1.5-1.5-0.7-3,0.8-4.4L86.9,13
 				c0.6-0.6,1.3-0.7,1.9-0.7c1.7,0.1,3.3,0.9,4.4,2.2C95,16.2,96,19.7,94.5,21z"/>
 		</g>
-		<text transform="matrix(1 0 0 1 7.8696 139.8519)" class="st9 st6 st10 st11">ATICO</text>
+		<text transform="matrix(1 0 0 1 7.8696 139.8519)" class="st8 st6 st9 st10">ATICO</text>
+		<text transform="matrix(1 0 0 1 7.8696 139.8519)" class="st8 st6 st9 st10">ATICO</text>
 	</g>
 </g>
 </svg>
