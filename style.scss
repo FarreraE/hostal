@@ -25,10 +25,10 @@
     padding-left: 2%;
     padding-right: 2%;
     .home {
-        //height: 80VH;
+        //height: 100VH;
         display: flex;
         justify-content: center;
-        align-items:stretch;
+        align-items: stretch;
         font-family: var(--font-Castoro);
         padding: 0%;
         .sectionA {
@@ -37,13 +37,10 @@
             //padding-top: 10%;
             opacity: 0.1;
             .cintaA {
-              
-                transform: scaleX(-1); 
+                transform: scaleX(-1);
             }
             .cintaC {
-                
-                //transform: scaleX(-1);               
-                
+                //transform: scaleX(-1);
             }
         }
 
@@ -51,10 +48,10 @@
             width: 100%;
             padding: 1%;
             padding-top: 20%;
-            
+
             header {
                 padding: 0%;
-                padding-top: 25%;
+                padding-top: 30%;
                 width: 100%;
                 //background-color: #2a2e32;
                 nav {
@@ -65,13 +62,13 @@
                         font-family: var(--font-Quicksand);
                         color: var(--color10);
                         text-decoration: none;
-                        font-size: 0.7rem;
+                        font-size: 0.8rem;
                         width: 23%;
                         text-align: left;
                         font-weight: bold;
                         //border: #0756a1 solid 1px;
                     }
-                    .left{
+                    .left {
                         text-align: right;
                     }
                     .containerimagotipo {
@@ -91,7 +88,7 @@
                 justify-content: center;
                 align-items: stretch;
                 font-family: var(--font-Castoro);
-                .mainIcon{
+                .mainIcon {
                     width: 25%;
                     margin: auto;
                     opacity: 0.5;
@@ -106,7 +103,7 @@
                         font-size: 1.8rem;
                         color: var(--color10);
                         font-weight: bold;
-                        //letter-spacing: 0.1em;
+                        letter-spacing: 0.1em;
                     }
                     .logotipo {
                         margin: auto;
@@ -114,10 +111,11 @@
                         margin-top: -4%;
                     }
                     p {
-                        font-size: 0.4em;
+                        padding-top: 2%;
+                        font-size: 0.75em;
                         text-align: center;
                         color: var(--colorBlack);
-                        
+                        font-family: var(--font-Quicksand);
                     }
                 }
                 .botonGroup {
@@ -146,8 +144,6 @@
                             width: 100%;
                             padding-top: 3%;
                             color: var(--colorWhite);
-
-                           
                         }
                         .CTAbtn:hover {
                             background-color: var(--color60);
@@ -177,13 +173,16 @@
         }
     }
     .gallery {
-        background-color: var(--color60);
-        height: 300px;
-        margin-top: 2%;
+        //background-color: var(--color60);
+        height: 400px;
+        padding-top: 15%;
+        margin-top: 10%;
+        border: #0756a1 solid 1px;
+        border-radius: 1rem;
     }
     .nosotros {
         font-family: var(--font-Quicksand);
-        padding: 5%;
+        padding: 10%;
         .isotipo {
             display: flex;
             justify-content: center;
@@ -204,37 +203,40 @@
             }
             p {
                 padding-top: 5%;
-                font-size: 0.8em;
-                text-align: justify;
+                font-size: 1em;
+                letter-spacing: 0.05em;
+                text-align: center;
             }
         }
 
         .btnContainer {
-           border: 0.1rem solid var(--color10);
-            width: 70%;
-            padding: 1%;
+            border: 0.1rem solid var(--color10);
+            width: 80%;
+            padding: 1.5%;
             border-radius: 0.2em;
             opacity: 0.8;
             display: flex;
             justify-content: center;
             align-items: center;
-            font-family: var(--font-Castoro);
+            margin-top: 5%;
+            //font-family: var(--font-Castoro);
             .CTAbtn {
-                font-size: 0.7em;
+                font-size: 1em;
+                letter-spacing: 0.1rem;
                 border: none;
                 border-radius: inherit;
                 background-color: var(--color10);
                 width: 100%;
                 padding-top: 2%;
+                padding-bottom: 2%;
                 color: var(--colorWhite);
                 //font-weight: bold;
-                letter-spacing: 0.1rem;
-
             }
             .CTAbtn:hover {
                 background-color: var(--color60);
             }
         }
+
         .btnContainer:hover {
             opacity: 1;
             border: 0.1rem solid var(--color60);
@@ -256,92 +258,88 @@
         }
     }
     .servicios {
-        padding: 5%;
-        padding-top: 2%;
-
-        .top {
-            .h2Title {
-                font-family: var(--font-Castoro);
-                color: var(--color60);
-                text-align: center;
-                font-size: 4rem;
-                font-weight: bold;
-            }
-            p {
-                padding: 2%;
-
-                font-size: 1.1em;
-                text-align: center;
-                letter-spacing: 0.05rem;
-                font-family: var(--font-Quicksand);
-                border: 0.1rem solid var(--color10);
-                border-radius: 0.5rem;
-            }
-            .icon {
-                padding: 2%;
-                width: 25%;
-                opacity: 0.2;
-            }
-            .topContainer {
-                display: flex;
-                justify-content: space-between;
-            }
-            .end {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .banner {
-                    width: 30%;
-                    opacity: 0.2;
-                    margin-top: 1.5%;
-                }
-                .b2 {
-                    transform: scaleX(-1);
-                }
-            }
-        }
-        .btnContainer {
-            border: 0.1rem solid var(--color10);
-            width: 40%;
-            padding: 0.5%;
-            border-radius: 0.5rem;
-            opacity: 0.8;
-            margin-top: 2%;
-            .btn {
-                font-size: 1.2rem;
-                border-radius: 0.5rem;
-                background-color: var(--color10);
-                letter-spacing: 0.2rem;
-                font-weight: 550;
-                border: none;
-                width: 100%;
-                padding-top: 2%;
-                padding-bottom: 1%;
-                font-family: var(--font-Castoro);
-            }
-            .btn:hover {
-                background-color: var(--color60);
-                opacity: 1;
-            }
-        }
-        .btnContainer:hover {
-            opacity: 1;
-        }
         .iconGroup {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             flex-wrap: wrap;
-            padding: 2%;
-            margin-top: 2%;
-            .icon {
-                width: 5%;
+
+            .iconService {
+                padding: 5%;
+                width: 25%;
                 opacity: 0.5;
             }
             .icon:hover {
                 opacity: 1;
             }
         }
+
+        .h2Title {
+            font-family: var(--font-Castoro);
+            color: var(--color60);
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            padding-top: 10%;
+        }
+        p {
+            padding: 5%;
+            font-size: 1em;
+            letter-spacing: 0.05em;
+            text-align: center;
+            margin: auto;
+            background-color: rgba(218, 149, 40,0.1);
+            border-left: var(--color10) solid 0.1rem;
+            border-right: var(--color10) solid 0.1rem;
+        }
+
+        .botonGroup {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .banner {
+                width: 30%;
+                opacity: 0.2;
+                margin-top: 1.5%;
+                display: none;
+            }
+            .b2 {
+                transform: scaleX(-1);
+            }
+            .btnContainer {
+                border: 0.1rem solid var(--color10);
+                width: 80%;
+                padding: 1.5%;
+                border-radius: 0.2em;
+                opacity: 0.8;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 5%;
+                //font-family: var(--font-Castoro);
+                .CTAbtn {
+                    font-size: 1.2em;
+                    letter-spacing: 0.1rem;
+                    border: none;
+                    border-radius: inherit;
+                    background-color: var(--color10);
+                    width: 100%;
+                    padding-top: 2%;
+                    padding-bottom: 2%;
+                    color: var(--colorWhite);
+                    //font-weight: bold;
+                }
+                .CTAbtn:hover {
+                    background-color: var(--color60);
+                }
+            }
+
+            .btnContainer:hover {
+                opacity: 1;
+                border: 0.1rem solid var(--color60);
+            }
+        }
+
         .habitaciones {
             display: flex;
             justify-content: space-between;
