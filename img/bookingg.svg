@@ -7,7 +7,7 @@
 	.st1{display:inline;fill:#00FF00;}
 	.st2{display:inline;}
 	.st3{fill:#DA9528;}
-	.st4{fill:#0756A1;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
+	.st4{fill:#2A2E32;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
 </style>
 <g id="Layer_4" class="st0">
 	<rect x="0.9" y="0.8" class="st1" width="500" height="500"/>

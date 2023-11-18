@@ -94,7 +94,7 @@
 
     </section>
     <!-- SERVICIOS -->
-    <section class="container-fluid servicios">
+    <section class="container-fluid servicios ">
 
         <div class="container-fluid iconGroup" data-aos="flip-left">
             <img class="iconService" src="img/cama.svg" alt="">
@@ -107,9 +107,9 @@
             <img class="iconService" src="img/drinks.svg" alt="">
         </div>
 
-        <h2 class="h2Title">HABITACIONES</h2>
+        <h2>HABITACIONES</h2>
 
-        <p>
+        <p class="shadow">
             Nuestras habitaciones te brindan una experiencia inolvidable. Equipadas con un escritorio práctico, TV
             de pantalla plana y ropa de cama suave para tu comodidad. Toallas mullidas, armario y enchufe cerca
             de la cama para tu conveniencia. Disfruta de la zona de comedor para momentos especiales. ¡Haz tu
@@ -135,7 +135,7 @@
 
         <div class="container-fluid botonGroup" data-aos="fade-dow" data-aos-anchor-placement="bottom-bottom">
             <img class="banner b2" src="img/patronLateralH.svg" alt="">
-            <div class="btnContainer">
+            <div class="btnContainer shadow">
                 <button class="CTAbtn">¡Vive la Experiencia!</button>
             </div>
             <img class="banner" src="img/patronLateralH.svg" alt="">
@@ -143,70 +143,68 @@
 
 
         <div class="row habitaciones">
-            <div class="col-12 descripcion" data-aos="fade-right" data-aos="fade-right" data-aos-offset="300"
-                data-aos-easing="ease-in-sine">
+            <div class="col-12 descripcion" data-aos="fade-up" data-aos-easing="ease-in-sine">
                 <h3>Sencilla</h3>
                 <p>Habitacion perfectas para viajeros solitarios en busca de un refugio tranquilo en Arenas de
                     San
                     Pedro, Ávila! Equipadas con todas las comodidades necesarias, incluyendo una acogedora cama
                     individual o doble.</p>
-                <div class="container btnContainer">
-                    <button class="btn btn-primary">RESERVAR</button>
-                </div>
+                <!-- <div class="container btnContainer">
+                    <button class="CTAbtn ">RESERVAR</button>
+                </div>-->
             </div>
 
 
-            <div class="col-12 barras descripcion" data-aos="fade-up" data-aos-offset="200"
-                data-aos-easing="ease-in-sine">
+            <div class="col-12 descripcion barras shadow" data-aos="fade-up" data-aos-easing="ease-in-sine">
                 <h3>Doble</h3>
                 <p>Para parejas o amigos que deseen escapar a Arenas de San Pedro, Ávila!. Con un ambiente
                     acogedor y
                     relajante, nuestras habitaciones dobles cuentan con 2 camas para que disfrutes al máximo.
                 </p>
-                <div class="container btnContainer">
-                    <button class="btn btn-primary">RESERVAR</button>
-                </div>
+                <!-- <div class="container btnContainer">
+                    <button class="CTAbtn ">RESERVAR</button>
+                </div>-->
             </div>
 
-            <div class="col-12 descripcion" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="col-12 descripcion" data-aos="fade-up" data-aos-easing="ease-in-sine">
                 <h3>Triple</h3>
                 <p>La elección perfecta para grupos o familias. Con amplios espacios, instalaciones modernas y
                     un
                     ambiente acogedor, te ofrecemos una estancia cómoda y relajante con
                     3 camas para mayor comodidad. </p>
-                <div class="container btnContainer">
-                    <button class="btn btn-primary">RESERVAR</button>
-                </div>
+                <!-- <div class="container btnContainer">
+                    <button class="CTAbtn ">RESERVAR</button>
+                </div>-->
             </div>
         </div>
     </section>
     <!-- ALOJAMIENTOS -->
     <section class="container-fluid alojamientos">
-        <h1>OTROS ALOJAMIENTOS</h1>
+        <h3>ALOJAMIENTOS DEL GRUPO </h3>
 
-        <div class="container-fluid itemGroup">
-            <div class="container item" data-aos="flip-up" data-aos-delay="100">
-                <img src="img/ATICO.svg" class="icon" alt="">
+        <div class="row itemGroup">
+            <div class="col-6 item" data-aos="flip-up" data-aos-delay="100">
+                <img src="img/aticovut.svg" class="icon" alt="">
                 <p>Apartamento Ático La Taberna</p>
             </div>
-            <div class="container item" data-aos="flip-up" data-aos-delay="200">
+            <div class="col-6 item" data-aos="flip-up" data-aos-delay="200">
                 <img src="img/PALOMAS.svg" class="icon" alt="">
                 <p>Vut Las Palomas</p>
             </div>
-            <div class="container item" data-aos="flip-up" data-aos-delay="50">
+            <div class="col-6 item" data-aos="flip-up" data-aos-delay="50">
                 <img src="img/LATABERNA1.svg" class="icon" alt="">
                 <p>Vut La Taberna 1</p>
             </div>
-            <div class="container item" data-aos="flip-up" data-aos-delay="150">
-                <img src="img/SORPRESA.svg" class="icon" alt="">
+            <div class="col-6 item" data-aos="flip-up" data-aos-delay="150">
+                <img src="img/Sorpresavut.svg" class="icon" alt="">
                 <p>Vut Sorpresa Suite La Taberna</p>
             </div>
-            <div class="container item" data-aos="flip-up" data-aos-delay="250">
+            <div class="col-6 item" data-aos="flip-up" data-aos-delay="250">
                 <img src="img/LOURDES.svg" class="icon" alt="">
                 <p>Vut Lourdes</p>
             </div>
-            <div class="container item" data-aos="flip-up" data-aos-delay="250">
-                <img src="img/LOURDES.svg" class="icon" alt="">
+            <div class="col-6 item" data-aos="flip-up" data-aos-delay="250">
+                <img src="img/LATABERNAHOS.svg" class="icon" alt="">
                 <p>Hostal</p>
             </div>
         </div>
@@ -262,7 +260,9 @@
                     </select>
 
 
-                    <button type="submit">Enviar</button>
+                    <div class="container btnContainer">
+                        <button class="CTAbtn ">CONTACTANOS</button>
+                    </div>
             </div>
             </form>
 
@@ -274,17 +274,20 @@
         <nav>
             <a href="#">Inicio</a>
             <a href="#">Galería</a>
-            <img class="imagotipo" src="img/isotipoAmarillo.svg" alt="">
-            <a href="#">Nosotros</a>
-            <a href="#">Contacto</a>
+            <div class="containerimagotipo">
+                <img class="imagotipo" src="img/isotipoGris.svg" alt="">
+            </div>
+            <a class="left" href="#">Nosotros</a>
+            <a class="left" href="#">Contacto</a>
         </nav>
-        <p>+34 920370395 C. Carrellana, 33, 05400 Arenas de San Pedro, Ávila</p>
-        <div class="contactoIcon">
+        <p>C. Carrellana, 33, 05400 Arenas de San Pedro, Ávila. <br> +34 920370395</p>
+        
+        <div class="container-fluid contactoIcon">
 
-            <img class="icon" src="img/whatsapp.svg" alt="">
-            <img class="icon" src="img/email.svg" alt="">
-            <img class="icon" src="img/phone.svg" alt="">
-            <img class="icon" src="img/booking.svg" alt="">
+            <img class="icon" src="img/whatsappg.svg" alt="">
+            <img class="icon" src="img/emailg.svg" alt="">
+            <img class="icon" src="img/phoneg.svg" alt="">
+            <img class="icon" src="img/bookingg.svg" alt="">
         </div>
 
 
