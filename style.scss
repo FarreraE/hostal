@@ -22,10 +22,9 @@
 
 .body {
     background-color: var(--colorWhite);
-    padding-left: 2%;
-    padding-right: 2%;
+    padding: 2%;
     .home {
-        height: 100VH;
+        height: 100vh;
         display: flex;
         justify-content: center;
         align-items: stretch;
@@ -173,12 +172,13 @@
         }
     }
     .gallery {
-        //background-color: var(--color60);
+        background-color: var(--color60);
         height: 400px;
-        padding-top: 15%;
+        //padding-top: 15%;
         margin-top: 10%;
         border: #0756a1 solid 1px;
         border-radius: 1rem;
+        color: #f1f2f2;
     }
     .nosotros {
         font-family: var(--font-Quicksand);
@@ -278,6 +278,7 @@
             //border-bottom: var(--color10) solid 0.1rem;
             border-radius: 0.5rem;
             padding-bottom: 10%;
+            margin-top: 20%;
             h2 {
                 font-family: var(--font-Castoro);
                 color: var(--color60);
@@ -293,7 +294,6 @@
                 text-align: center;
                 margin: auto;
                 // background-color: rgba(218, 149, 40, 0.1);
-               
             }
 
             .botonGroup {
@@ -406,35 +406,49 @@
         }
     }
     .alojamientos {
-        padding-top: 10%;
-        border-radius: 0.5rem;
+        padding-top: 5%;
+        padding-bottom: 2%;
+        border-radius: 0.5em;
+        //border: var(--color60) solid 0.12em;
+        background-color: var(--colorWhite);
+        margin-top: 20%;
         h3 {
             text-align: center;
             font-family: var(--font-Castoro);
-            color: var(--color10);
+            color: var(--color60);
             font-weight: bold;
+            font-size: 2em;
+        }
+        p {
+            text-align: center;
+            font-family: var(--font-Castoro);
+            color: var(--color60);
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: -3%;
         }
         .itemGroup {
             padding: 1%;
-            padding-top: 10%;
-            padding-bottom: 10%;
-            //border: #da9528 solid 0.15em;
             border-radius: 0.5rem;
-            
+            border-bottom-left-radius: 2rem;
+            border-bottom-right-radius: 2rem;
             .item {
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
                 align-items: center;
-                margin-top: 5%;
+                margin-top: 2%;
                 .icon {
                     width: 80%;
                 }
 
                 p {
-                    font-size: 0.7rem;
+                    font-size: 0.7em;
                     text-align: center;
-                    color: var(--colorWhite);
+                    color: var(--color10);
+                    font-weight: bold;
+                    font-family: var(--font-Quicksand);
+                    padding-top: 3%;
                 }
             }
         }
@@ -444,6 +458,7 @@
         padding-top: 2%;
         padding-bottom: 1%;
         color: var(--color60);
+        margin-top: 20%;
         .colA {
             padding: 2%;
             display: flex;
