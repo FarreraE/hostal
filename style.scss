@@ -31,9 +31,8 @@
         font-family: var(--font-Castoro);
         padding: 0%;
         .sectionA {
-            //height: 100%;
             width: 10%;
-            //padding-top: 10%;
+
             opacity: 0.1;
             .cintaA {
                 transform: scaleX(-1);
@@ -58,7 +57,7 @@
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
-                  
+
                     a {
                         font-family: var(--font-Quicksand);
                         color: var(--color10);
@@ -67,7 +66,6 @@
                         width: 23%;
                         text-align: left;
                         font-weight: bold;
-
                     }
                     .left {
                         text-align: right;
@@ -247,21 +245,6 @@
             opacity: 1;
             border: 0.1rem solid var(--color60);
         }
-        .contactoIcon {
-            width: 50%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding-top: 5%;
-            .icon {
-                width: 15%;
-                opacity: 0.5;
-            }
-            .icon:hover {
-                opacity: 1;
-                scale: 1.2;
-            }
-        }
     }
     .servicios {
         .iconGroup {
@@ -280,12 +263,10 @@
             }
         }
         .descripcionGeneral {
-            //border-top: var(--color10) solid 0.1rem;
-            //border-bottom: var(--color10) solid 0.1rem;
             background-color: rgba(218, 149, 40, 0.05);
             border-radius: 0.5rem;
             padding-bottom: 10%;
-            padding-top: 5%;
+            padding-top: 10%;
             margin-top: 20%;
             h2 {
                 font-family: var(--font-Castoro);
@@ -293,7 +274,6 @@
                 text-align: center;
                 font-size: 2rem;
                 font-weight: bold;
-                padding-top: 10%;
             }
             p {
                 padding: 5%;
@@ -305,7 +285,6 @@
                 border: none;
                 width: 100%;
                 font-size: 1em;
-                // background-color: rgba(218, 149, 40, 0.1);
             }
 
             .botonGroup {
@@ -314,7 +293,6 @@
                 align-items: center;
                 font-family: var(--font-Castoro);
                 background-color: transparent;
-                //background-color: var(--color10);
                 .banner {
                     width: 30%;
                     opacity: 0.2;
@@ -345,7 +323,6 @@
                         padding-top: 2%;
                         padding-bottom: 1%;
                         color: var(--colorWhite);
-                        //font-weight: bold;
                     }
                     .CTAbtn:hover {
                         background-color: var(--color60);
