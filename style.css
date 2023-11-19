@@ -482,6 +482,8 @@
 }
 
 .body .servicios .habitaciones {
+  background-color: rgba(218, 149, 40, 0.05);
+  border-radius: 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -492,8 +494,10 @@
 }
 
 .body .servicios .habitaciones .descripcion {
-  padding-top: 5%;
-  padding-bottom: 5%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  background-image: url(img/decoration.svg);
+  background-size: cover;
 }
 
 .body .servicios .habitaciones .descripcion h3 {
@@ -502,29 +506,36 @@
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
+  letter-spacing: 0.1em;
 }
 
 .body .servicios .habitaciones .descripcion p {
   padding-top: 2%;
-  text-align: left;
+  text-align: justify;
   font-family: var(--font-Quicksand);
   background-color: transparent;
   border: none;
-  width: 80%;
+  width: 100%;
+  margin: auto;
+  padding: 5%;
+}
+
+.body .servicios .habitaciones .descripcion .decoration {
+  width: 5%;
 }
 
 .body .servicios .habitaciones .descripcion .btnContainer {
   border: 0.1rem solid var(--color10);
-  width: 80%;
+  width: 40%;
   padding: 1.5%;
   border-radius: 0.2em;
   opacity: 0.8;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -532,8 +543,8 @@
 }
 
 .body .servicios .habitaciones .descripcion .btnContainer .CTAbtn {
-  font-size: 1.2em;
-  letter-spacing: 0.1rem;
+  font-size: 1em;
+  letter-spacing: 0rem;
   border: none;
   border-radius: inherit;
   background-color: var(--color10);
@@ -558,8 +569,8 @@
 }
 
 .body .alojamientos {
-  padding-top: 5%;
-  padding-bottom: 2%;
+  padding-top: 10%;
+  padding-bottom: 5%;
   border-radius: 0.5em;
   background-color: var(--colorWhite);
   margin-top: 20%;
