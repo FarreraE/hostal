@@ -295,6 +295,7 @@
                 padding: 5%;
                 padding-top: 2%;
                 text-align: justify;
+                text-justify: inter-word;
                 font-family: var(--font-Quicksand);
                 background-color: transparent;
                 border: none;
@@ -354,10 +355,13 @@
         }
         .habitaciones {
             background-color: rgba(218, 149, 40, 0.08);
-            // border-radius: 1em;
+            border-radius: 1em;
             display: flex;
             justify-content: space-between;
+            margin: auto;
             margin-top: 10%;
+            width: 90%;
+
             .title {
                 display: flex;
                 align-items: center;
@@ -366,7 +370,7 @@
                     width: 15%;
                 }
                 .titleIconE {
-                    width: 25%;
+                    width: 20%;
                 }
             }
             .descripcion {
@@ -378,18 +382,21 @@
                     font-family: var(--font-Castoro);
                     color: var(--color60);
                     text-align: left;
-                    font-size: 2.2rem;
+                    font-size: 1.8rem;
                     font-weight: bold;
                 }
 
                 p {
-                    padding-top: 2%;
+                    padding: 5%;
+                    padding-top: 3%;
                     text-align: justify;
+                    text-justify: inter-word;
                     font-family: var(--font-Quicksand);
                     border: none;
                     width: 100%;
                     margin: auto;
-                    padding: 5%;
+                  
+                    font-size: 0.7em;
                 }
                 .btnContainer {
                     border: 0.1rem solid var(--color10);
@@ -405,7 +412,7 @@
                     font-family: var(--font-Castoro);
                     background-color: transparent;
                     .CTAbtn {
-                        font-size: 1.1em;
+                        font-size: 1em;
                         letter-spacing: 0.05rem;
                         border: none;
                         border-radius: inherit;
