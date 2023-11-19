@@ -916,6 +916,33 @@
   opacity: 0.5;
 }
 
+@media (min-width: 576px) {
+  .body {
+    background-color: red;
+  }
+}
+
+/* Estilos para dispositivos medianos (MD) */
+@media (min-width: 768px) {
+  /* Estilos específicos para dispositivos medianos */
+}
+
+/* Estilos para dispositivos grandes (LG y XL) */
+@media (min-width: 992px) {
+  /* Estilos específicos para dispositivos grandes */
+  .body {
+    background-color: blue;
+  }
+}
+
+/* Estilos para dispositivos grandes (LG y XL) */
+@media (min-width: 1200px) {
+  /* Estilos específicos para dispositivos grandes */
+  .body {
+    background-color: yellow;
+  }
+}
+
 /*
 Apartamento Ático La Taberna
 Vut Las Palomas
