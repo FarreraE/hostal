@@ -323,16 +323,17 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 5%;
+  font-family: var(--font-Castoro);
 }
 
 .body .nosotros .btnContainer .CTAbtn {
-  font-size: 1em;
-  letter-spacing: 0.1rem;
+  font-size: 1.1em;
+  letter-spacing: 0.05rem;
   border: none;
   border-radius: inherit;
   background-color: var(--color10);
   width: 100%;
-  padding-top: 2%;
+  padding-top: 4%;
   padding-bottom: 2%;
   color: var(--colorWhite);
 }
@@ -402,7 +403,7 @@
 
 .body .servicios .descripcionGeneral h2 {
   font-family: var(--font-Castoro);
-  color: var(--color60);
+  color: var(--color10);
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
@@ -429,6 +430,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: var(--font-Castoro);
 }
 
 .body .servicios .descripcionGeneral .botonGroup .banner {
@@ -445,7 +447,7 @@
 
 .body .servicios .descripcionGeneral .botonGroup .btnContainer {
   border: 0.1rem solid var(--color10);
-  width: 80%;
+  width: 90%;
   padding: 1.5%;
   border-radius: 0.2em;
   opacity: 0.8;
@@ -462,14 +464,14 @@
 }
 
 .body .servicios .descripcionGeneral .botonGroup .btnContainer .CTAbtn {
-  font-size: 1.2em;
-  letter-spacing: 0.1rem;
+  font-size: 1.1em;
+  letter-spacing: 0.05rem;
   border: none;
   border-radius: inherit;
   background-color: var(--color10);
   width: 100%;
   padding-top: 2%;
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   color: var(--colorWhite);
 }
 
@@ -483,7 +485,7 @@
 }
 
 .body .servicios .habitaciones {
-  border-radius: 1em;
+  background-color: rgba(218, 149, 40, 0.08);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -491,6 +493,26 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 10%;
+}
+
+.body .servicios .habitaciones .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.body .servicios .habitaciones .title .titleIcon {
+  width: 15%;
+}
+
+.body .servicios .habitaciones .title .titleIconE {
+  width: 25%;
 }
 
 .body .servicios .habitaciones .descripcion {
@@ -503,7 +525,7 @@
   font-family: var(--font-Castoro);
   color: var(--color60);
   text-align: left;
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: bold;
 }
 
@@ -520,8 +542,7 @@
 
 .body .servicios .habitaciones .descripcion .btnContainer {
   border: 0.1rem solid var(--color10);
-  margin-left: 60%;
-  width: 40%;
+  width: 60%;
   padding: 1.5%;
   border-radius: 0.2em;
   opacity: 0.8;
@@ -535,17 +556,18 @@
       -ms-flex-align: center;
           align-items: center;
   margin-top: 5%;
+  font-family: var(--font-Castoro);
 }
 
 .body .servicios .habitaciones .descripcion .btnContainer .CTAbtn {
-  font-size: 1em;
-  letter-spacing: 0rem;
+  font-size: 1.1em;
+  letter-spacing: 0.05rem;
   border: none;
   border-radius: inherit;
   background-color: var(--color10);
   width: 100%;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  padding-top: 3%;
+  padding-bottom: 1%;
   color: var(--colorWhite);
 }
 
@@ -561,6 +583,7 @@
 .body .servicios .habitaciones .barras {
   border-top: var(--color10) solid 0.1rem;
   border-bottom: var(--color10) solid 0.1rem;
+  background-color: rgba(218, 149, 40, 0.05);
 }
 
 .body .alojamientos {
