@@ -246,6 +246,15 @@
   border: #0756a1 solid 1px;
   border-radius: 1rem;
   color: #f1f2f2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .body .nosotros {
@@ -402,10 +411,11 @@
 
 .body .servicios .descripcionGeneral p {
   padding: 5%;
-  font-size: 1em;
-  letter-spacing: 0.05em;
-  text-align: center;
-  margin: auto;
+  text-align: justify;
+  font-family: var(--font-Quicksand);
+  background-color: transparent;
+  border: none;
+  width: 100%;
 }
 
 .body .servicios .descripcionGeneral .botonGroup {
@@ -447,7 +457,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 5%;
+  margin-top: 0%;
 }
 
 .body .servicios .descripcionGeneral .botonGroup .btnContainer .CTAbtn {
@@ -566,7 +576,7 @@
 .body .alojamientos p {
   text-align: center;
   font-family: var(--font-Castoro);
-  color: var(--color60);
+  color: var(--color10);
   font-weight: bold;
   font-size: 1.2em;
   margin-top: -3%;
