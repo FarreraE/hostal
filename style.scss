@@ -24,7 +24,7 @@
     background-color: var(--colorWhite);
     padding: 2%;
     .home {
-        height: 100vh;
+       // height: 100vh;
         display: flex;
         justify-content: center;
         align-items: stretch;
@@ -606,6 +606,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            width: 90%;
             a {
                 font-family: var(--font-Quicksand);
                 color: var(--colorBlack);

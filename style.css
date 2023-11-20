@@ -25,7 +25,6 @@
 }
 
 .body .home {
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -823,6 +822,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 90%;
 }
 
 .body footer nav a {
@@ -1100,99 +1100,101 @@
   .body .servicios .descripcionGeneral .botonGroup .btnContainer .CTAbtn {
     font-size: 1.2em;
   }
-  .body .servicios .habitaciones {
-    background-color: rgba(218, 149, 40, 0.08);
-    border-radius: 1em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: auto;
-    margin-top: 20%;
-    width: 90%;
-  }
-  .body .servicios .habitaciones .title {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
   .body .servicios .habitaciones .title .titleIcon {
-    width: 15%;
+    width: 10%;
   }
   .body .servicios .habitaciones .title .titleIconE {
-    width: 20%;
+    width: 15%;
   }
   .body .servicios .habitaciones .descripcion {
     padding: 5%;
-    padding-top: 10%;
-    padding-bottom: 10%;
   }
   .body .servicios .habitaciones .descripcion h3 {
-    font-family: var(--font-Castoro);
-    color: var(--color60);
-    text-align: left;
-    font-size: 1.8rem;
-    font-weight: bold;
+    font-size: 2rem;
   }
   .body .servicios .habitaciones .descripcion p {
-    padding: 5%;
-    text-align: justify;
-    text-justify: inter-word;
-    font-family: var(--font-Quicksand);
-    border: none;
-    width: 100%;
-    margin: auto;
-    font-size: 0.8em;
+    padding: 3%;
+    font-size: 1em;
   }
   .body .servicios .habitaciones .descripcion .btnContainer {
-    border: 0.1rem solid var(--color60);
-    width: 60%;
-    padding: 1.5%;
-    border-radius: 0.2em;
-    opacity: 0.8;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 5%;
-    font-family: var(--font-Castoro);
-    background-color: transparent;
+    width: 50%;
+    margin-top: 2%;
   }
   .body .servicios .habitaciones .descripcion .btnContainer .CTAbtn {
     font-size: 1em;
-    letter-spacing: 0.05rem;
-    border: none;
-    border-radius: inherit;
-    background-color: var(--color60);
-    width: 100%;
+    letter-spacing: 0.1rem;
+  }
+  .body .alojamientos {
+    padding-top: 8%;
+    padding-bottom: 3%;
+  }
+  .body .alojamientos h3 {
+    font-size: 2.5em;
+  }
+  .body .alojamientos p {
+    font-size: 1.4em;
+    margin-top: -3%;
+    letter-spacing: 0.05em;
+  }
+  .body .alojamientos .itemGroup {
+    padding: 0%;
+  }
+  .body .alojamientos .itemGroup .item {
+    margin-top: 5%;
+  }
+  .body .alojamientos .itemGroup .item .icon {
+    width: 80%;
+  }
+  .body .alojamientos .itemGroup .item p {
+    font-size: 0.8em;
     padding-top: 3%;
-    padding-bottom: 1%;
-    color: var(--colorWhite);
+    letter-spacing: 0em;
   }
-  .body .servicios .habitaciones .descripcion .btnContainer .CTAbtn:hover {
-    background-color: var(--color10);
+  .body .contacto {
+    width: 90%;
   }
-  .body .servicios .habitaciones .descripcion .btnContainer:hover {
-    opacity: 1;
-    border: 0.1rem solid var(--color10);
+  .body .contacto .colA .botonBanner .logotipo {
+    width: 90%;
   }
-  .body .servicios .habitaciones .barras {
-    border-top: var(--color10) solid 0.1rem;
-    border-bottom: var(--color10) solid 0.1rem;
-    background-color: rgba(218, 149, 40, 0.05);
+  .body .contacto .colA .botonBanner h4 {
+    font-size: 1.8rem;
+    letter-spacing: 0.1rem;
+  }
+  .body .contacto .colA .botonBanner p {
+    font-size: 1.2em;
+    margin: 0%;
+  }
+  .body .contacto .colB {
+    padding: 5%;
+    width: 80%;
+    margin: auto;
+  }
+  .body .contacto .colB form {
+    background-color: var(--colorWhite);
+    padding: 5%;
+  }
+  .body .contacto .colB .btnContainer {
+    margin-top: 5%;
+    width: 70%;
+  }
+  .body .contacto .colB .btnContainer .CTAbtn {
+    font-size: 1.2em;
+  }
+  .body footer nav {
+    width: 80%;
+  }
+  .body footer nav a {
+    font-size: 1rem;
+    width: 23%;
+  }
+  .body footer p {
+    font-size: 0.8em;
+  }
+  .body footer .contactoIcon {
+    width: 70%;
+  }
+  .body footer .contactoIcon .icon {
+    width: 8%;
   }
 }
 
