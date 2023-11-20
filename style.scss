@@ -24,7 +24,7 @@
     background-color: var(--colorWhite);
     padding: 2%;
     .home {
-       // height: 100vh;
+        // height: 100vh;
         display: flex;
         justify-content: center;
         align-items: stretch;
@@ -158,9 +158,15 @@
                         justify-content: space-around;
                         align-items: center;
                         padding-top: 5%;
-                        .icon {
-                            width: 12%;
-                            opacity: 0.5;
+                        .link {
+                            //background-color: #2a2e32;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                             .icon {
+                                width: 60%;
+                                opacity: 0.5;
+                            }
                         }
                         .icon:hover {
                             opacity: 1;

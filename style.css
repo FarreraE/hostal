@@ -229,8 +229,20 @@
   padding-top: 5%;
 }
 
-.body .home .sectionB .mainInformation .botonGroup .contactoIcon .icon {
-  width: 12%;
+.body .home .sectionB .mainInformation .botonGroup .contactoIcon .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body .home .sectionB .mainInformation .botonGroup .contactoIcon .link .icon {
+  width: 60%;
   opacity: 0.5;
 }
 
@@ -946,15 +958,16 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
     padding-top: 5%;
   }
   .body .home .sectionB .mainInformation .botonGroup .contactoIcon .icon {
-    width: 10%;
+    width: 40%;
     opacity: 0.5;
   }
   .body .gallery {
