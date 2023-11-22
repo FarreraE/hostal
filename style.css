@@ -589,7 +589,7 @@
   padding-bottom: 5%;
   border-radius: 0.5em;
   background-color: var(--colorWhite);
-  margin-top: 20%;
+  margin-top: 10%;
   background-color: rgba(7, 86, 161, 0.05);
   background-image: url(img/decorationb.svg);
   background-size: cover;
@@ -601,7 +601,7 @@
   font-family: var(--font-Castoro);
   color: var(--color60);
   font-weight: bold;
-  font-size: 2.3em;
+  font-size: 2.5em;
 }
 
 .body .alojamientos p {
@@ -641,13 +641,17 @@
   width: 90%;
 }
 
-.body .alojamientos .itemGroup .item p {
-  font-size: 0.7em;
+.body .alojamientos .itemGroup .item .linkAlojamiento {
   text-align: center;
   color: var(--color10);
   font-weight: bold;
-  font-family: var(--font-Quicksand);
   padding-top: 3%;
+  text-decoration: none;
+}
+
+.body .alojamientos .itemGroup .item .linkAlojamiento p {
+  font-family: var(--font-Quicksand);
+  font-size: 0.7em;
 }
 
 .body .contacto {
@@ -1092,10 +1096,25 @@
     scale: 1.2;
   }
   .body .servicios .iconGroup {
-    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .body .servicios .iconGroup .iconService {
+    padding: 5%;
     width: 25%;
+    opacity: 0.5;
+  }
+  .body .servicios .iconGroup .icon:hover {
+    opacity: 1;
   }
   .body .servicios .descripcionGeneral {
     padding-bottom: 5%;
@@ -1214,6 +1233,565 @@
 /* Estilos para dispositivos medianos (MD) */
 @media (min-width: 768px) {
   /* Estilos específicos para dispositivos medianos */
+  .body .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    font-family: var(--font-Castoro);
+    padding: 0%;
+  }
+  .body .home .sectionA {
+    width: 5%;
+    opacity: 0.1;
+  }
+  .body .home .sectionA .cintaA {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .body .home .sectionB {
+    padding: 1%;
+  }
+  .body .home .sectionB header {
+    padding-top: 1%;
+    width: 80%;
+    margin: auto;
+  }
+  .body .home .sectionB header nav {
+    padding-top: 5%;
+  }
+  .body .home .sectionB header nav a {
+    font-size: 1.2rem;
+    width: 23%;
+    font-weight: none;
+  }
+  .body .home .sectionB header nav .left {
+    text-align: right;
+  }
+  .body .home .sectionB header nav .containerimagotipo {
+    width: 8%;
+  }
+  .body .home .sectionB header nav .containerimagotipo .imagotipo {
+    width: 80%;
+    opacity: 0.5;
+  }
+  .body .home .sectionB .mainInformation .mainIcon {
+    width: 20%;
+    padding-top: 15%;
+    opacity: 0.5;
+  }
+  .body .home .sectionB .mainInformation .infoLogo {
+    padding-top: 5%;
+  }
+  .body .home .sectionB .mainInformation .infoLogo h1 {
+    font-size: 3.5em;
+    letter-spacing: 0.01em;
+  }
+  .body .home .sectionB .mainInformation .infoLogo .logotipo {
+    width: 70%;
+    padding-top: 1%;
+  }
+  .body .home .sectionB .mainInformation .infoLogo p {
+    padding-top: 0%;
+    font-size: 1em;
+    letter-spacing: 0.05em;
+  }
+  .body .home .sectionB .mainInformation .botonGroup {
+    padding-top: 0%;
+  }
+  .body .home .sectionB .mainInformation .botonGroup .btnContainer {
+    border: 0.1rem solid var(--color10);
+    width: 40%;
+    padding: 0.5%;
+    border-radius: 0.3em;
+    margin-top: 10%;
+  }
+  .body .home .sectionB .mainInformation .botonGroup .btnContainer .CTAbtn {
+    font-size: 1.5em;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+  }
+  .body .home .sectionB .mainInformation .botonGroup .contactoIcon {
+    width: 60%;
+    padding-top: 5%;
+  }
+  .body .home .sectionB .mainInformation .botonGroup .contactoIcon .link .icon {
+    width: 40%;
+  }
+  .body .gallery {
+    background-color: var(--color10);
+    height: 400px;
+    margin-top: 10%;
+    border: #0756a1 solid 1px;
+    border-radius: 1rem;
+    color: #f1f2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .body .nosotros {
+    font-family: var(--font-Quicksand);
+    padding: 10%;
+  }
+  .body .nosotros .isotipo .logo {
+    opacity: 0.1;
+    width: 20%;
+  }
+  .body .nosotros .descripcion .logo {
+    padding-top: 5%;
+    width: 80%;
+  }
+  .body .nosotros .descripcion p {
+    font-size: 1em;
+    width: 80%;
+  }
+  .body .nosotros .btnContainer {
+    border: 0.1rem solid var(--color10);
+    width: 40%;
+    padding: 0.8%;
+    opacity: 0.8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .body .nosotros .btnContainer .CTAbtn {
+    font-size: 1.3em;
+    letter-spacing: 0.05rem;
+  }
+  .body .servicios {
+    background-color: rgba(218, 149, 40, 0.05);
+    width: 100%;
+    padding-bottom: 10%;
+    border-radius: 0.5rem;
+  }
+  .body .servicios .iconGroup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    padding-top: 3%;
+  }
+  .body .servicios .iconGroup .iconService {
+    padding: 2%;
+    width: 12%;
+    opacity: 0.5;
+  }
+  .body .servicios .iconGroup .icon:hover {
+    opacity: 1;
+  }
+  .body .servicios .descripcionGeneral {
+    background-color: transparent;
+    border-radius: 0.5rem;
+    padding-bottom: 1%;
+    padding-top: 10%;
+    margin-top: 5%;
+  }
+  .body .servicios .descripcionGeneral h2 {
+    font-family: var(--font-Castoro);
+    color: var(--color60);
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  .body .servicios .descripcionGeneral p {
+    padding: 5%;
+    padding-top: 2%;
+    text-align: justify;
+    text-justify: inter-character;
+    font-family: var(--font-Quicksand);
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.1em;
+    margin: 0%;
+  }
+  .body .servicios .descripcionGeneral .botonGroup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: var(--font-Castoro);
+    background-color: transparent;
+  }
+  .body .servicios .descripcionGeneral .botonGroup .banner {
+    width: 30%;
+    opacity: 0.3;
+    margin-top: -0.3%;
+    display: block;
+  }
+  .body .servicios .descripcionGeneral .botonGroup .b2 {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .body .servicios .descripcionGeneral .botonGroup .btnContainer {
+    border: 0.1rem solid var(--color10);
+    width: 90%;
+    padding: 0.55%;
+    border-radius: 0.2em;
+    opacity: 0.8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 0%;
+    background-color: transparent;
+  }
+  .body .servicios .descripcionGeneral .botonGroup .btnContainer .CTAbtn {
+    font-size: 1.1em;
+    letter-spacing: 0.05rem;
+    border: none;
+    border-radius: inherit;
+    background-color: var(--color10);
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: var(--colorWhite);
+  }
+  .body .servicios .descripcionGeneral .botonGroup .btnContainer .CTAbtn:hover {
+    background-color: var(--color60);
+  }
+  .body .servicios .descripcionGeneral .botonGroup .btnContainer:hover {
+    opacity: 1;
+    border: 0.1rem solid var(--color60);
+  }
+  .body .servicios .habitaciones {
+    background-color: transparent;
+    border-radius: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto;
+    margin-top: 2%;
+    width: 100%;
+  }
+  .body .servicios .habitaciones .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .body .servicios .habitaciones .title .titleIcon {
+    width: 0%;
+  }
+  .body .servicios .habitaciones .title .titleIconE {
+    width: 0%;
+  }
+  .body .servicios .habitaciones .descripcion {
+    padding: 1%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .body .servicios .habitaciones .descripcion h3 {
+    font-family: var(--font-Castoro);
+    color: var(--color60);
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .body .servicios .habitaciones .descripcion p {
+    padding: 5%;
+    text-align: center;
+    font-family: var(--font-Quicksand);
+    border: none;
+    width: 100%;
+    margin: auto;
+    font-size: 0.8em;
+  }
+  .body .servicios .habitaciones .descripcion .btnContainer {
+    border: 0.1rem solid var(--color60);
+    width: 60%;
+    padding: 1.5%;
+    border-radius: 0.2em;
+    opacity: 0.8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 5%;
+    font-family: var(--font-Castoro);
+    background-color: transparent;
+  }
+  .body .servicios .habitaciones .descripcion .btnContainer .CTAbtn {
+    font-size: 0.8em;
+    letter-spacing: 0.05rem;
+    border: none;
+    border-radius: inherit;
+    background-color: var(--color60);
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: var(--colorWhite);
+  }
+  .body .servicios .habitaciones .descripcion .btnContainer .CTAbtn:hover {
+    background-color: var(--color10);
+  }
+  .body .servicios .habitaciones .descripcion .btnContainer:hover {
+    opacity: 1;
+    border: 0.1rem solid var(--color10);
+  }
+  .body .servicios .habitaciones .barras {
+    border: none;
+    border-right: var(--color10) solid 0.1rem;
+    border-left: var(--color10) solid 0.1rem;
+    background-color: transparent;
+  }
+  .body .alojamientos {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 0.5em;
+    background-color: var(--colorWhite);
+    margin-top: 10%;
+    background-color: rgba(7, 86, 161, 0.05);
+    background-image: url(img/decorationb.svg);
+    background-size: cover;
+    width: 100%;
+  }
+  .body .alojamientos h3 {
+    text-align: center;
+    font-family: var(--font-Castoro);
+    color: var(--color60);
+    font-weight: bold;
+    font-size: 3em;
+  }
+  .body .alojamientos p {
+    text-align: center;
+    font-family: var(--font-Castoro);
+    color: var(--color10);
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-top: -2%;
+    letter-spacing: 0.1rem;
+  }
+  .body .alojamientos .itemGroup {
+    padding: 1%;
+    border-radius: 0.5rem;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+  .body .alojamientos .itemGroup .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1%;
+  }
+  .body .alojamientos .itemGroup .item .icon {
+    width: 80%;
+  }
+  .body .alojamientos .itemGroup .item .linkAlojamiento {
+    text-align: center;
+    color: var(--color10);
+    font-weight: bold;
+    padding-top: 3%;
+    text-decoration: none;
+  }
+  .body .alojamientos .itemGroup .item .linkAlojamiento p {
+    font-family: var(--font-Quicksand);
+    font-size: 0.7em;
+  }
+  .body .contacto {
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: var(--color60);
+    margin-top: 10%;
+  }
+  .body .contacto .colA {
+    padding: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  .body .contacto .colA .botonBanner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 2%;
+    padding: 5%;
+  }
+  .body .contacto .colA .botonBanner h4 {
+    font-family: var(--font-Castoro);
+    color: var(--color60);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0rem;
+    margin-top: 2%;
+  }
+  .body .contacto .colA .botonBanner p {
+    padding: 4%;
+    text-align: justify;
+  }
+  .body .contacto .colA .botonBanner .contactoIcon {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
+    border-radius: 0.5rem;
+  }
+  .body .contacto .colA .botonBanner .contactoIcon .icon {
+    width: 10%;
+    opacity: 1;
+  }
+  .body .contacto .colA .botonBanner .contactoIcon .icon:hover {
+    opacity: 1;
+    scale: 1.2;
+  }
+  .body .contacto .colB {
+    padding: 0%;
+    width: 45%;
+    margin: auto;
+  }
+  .body .contacto .colB form {
+    background-color: var(--colorWhite);
+    padding: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .body .contacto .colB label {
+    display: block;
+    margin-bottom: 2%;
+  }
+  .body .contacto .colB input,
+  .body .contacto .colB select,
+  .body .contacto .colB textarea {
+    width: 100%;
+    padding: 1%;
+    margin-bottom: 3%;
+    border: none;
+    border-radius: 0.1rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: var(--color60);
+  }
+  .body .contacto .colB textarea {
+    resize: vertical;
+  }
+  .body .contacto .colB .btnContainer {
+    border: 0.1rem solid var(--color10);
+    width: 70%;
+    padding: 1.5%;
+    border-radius: 0.2em;
+    opacity: 0.8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10%;
+    font-family: var(--font-Castoro);
+  }
+  .body .contacto .colB .btnContainer .CTAbtn {
+    font-size: 1em;
+    letter-spacing: 0.1rem;
+    border: none;
+    border-radius: inherit;
+    background-color: var(--color10);
+    width: 100%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: var(--colorWhite);
+  }
+  .body .contacto .colB .btnContainer .CTAbtn:hover {
+    background-color: var(--color60);
+  }
+  .body .contacto .colB .btnContainer:hover {
+    opacity: 1;
+    border: 0.1rem solid var(--color60);
+  }
 }
 
 /* Estilos para dispositivos grandes (LG y XL) */
@@ -1239,4 +1817,328 @@ Vut La Taberna 1
 Vut Sorpresa Suite La Taberna
 Vut Lourdes
 */
+/*
+<body class="body">
+    <!-- HEAD -->
+    <section id="home" class="container-fluid home">
+        <div class="sectionA">
+            <img class="cintaA" src="img/patronLateral.svg" alt="">
+        </div>
+        <div class="sectionB">
+            <div class="container-fluid mainInformation">
+                <img class="mainIcon" data-aos="fade-down" src="img/isotipoAmarillo.svg" alt="">
+                <div class="infoLogo">
+                    <h1 data-aos="fade-down">Hostal</h1>
+                    <img class="logotipo" src="img/logoAzul.svg" alt="" data-aos="zoom-in"
+                        data-aos-easing="ease-in-sine">
+                    <p data-aos="fade-up">C. Carrellana, 33, 05400 Arenas de San Pedro, Ávila</p>
+                </div>
+                <div class="container botonGroup" data-aos="fade-up">
+                    <div class="contactoIcon">
+                        <a class="link"
+                            href="https://api.whatsapp.com/send?phone=34722201905&text=Hola,%20quiero%20consultar%20la%20disponibilidad%20en%20la%20taberna.%20"
+                            target="_blank">
+                            <img class="icon" src="img/whatsapp.svg" alt="">
+                        </a>
+                        <a class="link" href="mailto:elcorreoquequieres@correo.com">
+                            <img class="icon" src="img/email.svg" alt=""></a>
+                        <a class="link" href="tel:+34722201905"><img class="icon" src="img/phone.svg" alt=""></a>
+                        <a class="link" href="https://www.booking.com/hotel/es/hostal-la-taverna.es.html"
+                            target="_blank"><img class="icon" src="img/booking.svg" alt=""></a>
+                    </div>
+                    <div class="container btnContainer">
+                        <button class="CTAbtn">RESERVA HOY</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <header data-aos="fade-up">
+                <nav>
+                    <a href="#home">Inicio</a>
+                    <a href="#gallery">Galería</a>
+                    <div class="containerimagotipo">
+                        <img class="imagotipo" src="img/isotipoAmarillo.svg" alt="">
+                    </div>
+                    <a class="left" href="#nosotros">Nosotros</a>
+                    <a class="left" href="#contacto">Contacto</a>
+                </nav>
+            </header>
+        </div>
+        <div class="sectionA">
+            <img class="cintaC" src="img/patronLateral.svg" alt="">
+        </div>
+    </section>
+    <!-- GALERY -->
+    <section id="gallery" class="container-fluid gallery">
+        <h3> FOTOS</h3>
+    </section>
+    <!-- NOSOTROS -->
+    <section id="nosotros" class=" nosotros">
+
+        <div class="isotipo" data-aos="zoom-in-down">
+            <img class="logo" src="img/isotipoGris.svg" alt="">
+        </div>
+
+        <div class="descripcion" data-aos="zoom-out" data-aos-offset="300">
+            <img class="logo" src="img/logoAzul.svg" alt="" data-aos="zoom-out">
+            <p>Bienvenido a Hostal La Taberna en Arenas de San Pedro. Disfruta de una estancia acogedora y
+                cómoda en nuestro hostal, situado en un encantador rincón de la provincia de Ávila, España.
+
+                Ofrecemos habitaciones confortables, un ambiente acogedor y una ubicación ideal para explorar la
+                belleza natural de la Sierra de Gredos. Además, para hacer tu experiencia aún más placentera,
+                contamos con un bar y deliciosa comida disponible. ¡Reserva tu estancia con nosotros y descubre lo
+                que esta maravillosa región tiene para ofrecer!</p>
+
+        </div>
+
+        <div class="container btnContainer">
+            <button class="CTAbtn">Reserva ahora</button>
+        </div>
+
+    </section>
+    <!-- SERVICIOS -->
+    <section id="servios" class="container-fluid servicios ">
+
+        <div class="container-fluid iconGroup" data-aos="flip-left">
+            <img class="iconService" src="img/cama.svg" alt="">
+            <img class="iconService" src="img/wifi.svg" alt="">
+            <img class="iconService" src="img/parking.svg" alt="">
+            <img class="iconService" src="img/tv.svg" alt="">
+            <img class="iconService" src="img/ac.svg" alt="">
+            <img class="iconService" src="img/hairdryier.svg" alt="">
+            <img class="iconService" src="img/food.svg" alt="">
+            <img class="iconService" src="img/drinks.svg" alt="">
+        </div>
+        <div class="container-fluid descripcionGeneral shadow">
+            <h2>HABITACIONES</h2>
+
+            <p>
+                Nuestras habitaciones te brindan una experiencia inolvidable. Equipadas con un escritorio práctico, TV
+                de pantalla plana y ropa de cama suave para tu comodidad. Toallas mullidas, armario y enchufe cerca
+                de la cama para tu conveniencia. Disfruta de la zona de comedor para momentos especiales. ¡Haz tu
+                estancia cómoda y acogedora con nosotros!
+            </p>
+            <!--
+            <p>Nuestras habitaciones están diseñadas para brindarte una experiencia inolvidable.
+                Equipadas
+                con un
+                práctico escritorio, TV de pantalla plana para tus momentos de relax y suave ropa de cama
+                que te
+                abraza, te aseguramos comodidad en cada rincón. Accede a tu espacio de manera exclusiva
+                mediante
+                encantadoras escaleras, disfruta de una entrada privada para tu tranquilidad y ajusta el
+                ambiente a
+                tu gusto con aire acondicionado individual y calefacción. Las toallas mullidas y el armario
+                están
+                listos para tu uso personal, y el enchufe cerca de la cama facilita la recarga de tus
+                dispositivos.
+                Además, la zona de comedor te invita a saborear momentos especiales ¡Haz de tu estancia una
+                experiencia cómoda y acogedora con nosotros!</p> -->
+
+
+            <div class="container-fluid botonGroup" data-aos="fade-dow" data-aos-anchor-placement="bottom-bottom">
+                <img class="banner b2" src="img/patronLateralH.svg" alt="">
+                <div class="btnContainer">
+                    <button class="CTAbtn">¡Vive la Experiencia!</button>
+                </div>
+                <img class="banner" src="img/patronLateralH.svg" alt="">
+            </div>
+
+        </div>
+        <div class="row habitaciones shadow">
+            <div class="col-12 col-md-4 descripcion">
+                <div class="container-fluid title">
+                    <h3> Sencilla</h3>
+                    <img class="titleIcon" src="img/camaS.svg">
+                </div>
+                <p>Habitacion perfectas para viajeros solitarios en busca de un refugio tranquilo en Arenas de
+                    San
+                    Pedro, Ávila! Equipadas con todas las comodidades necesarias, incluyendo una acogedora cama
+                    individual o doble.</p>
+                <div class="container btnContainer">
+                    <button class="CTAbtn ">Hospédate</button>
+                </div>
+            </div>
+
+
+            <div class="col-12 col-md-4 descripcion barras">
+                <div class="container-fluid title">
+
+                    <h3> DOBLE</h3>
+                    <img src="img/camad.svg" alt="" class="titleIcon">
+                </div>
+
+                <p>Para parejas o amigos que deseen escapar a Arenas de San Pedro, Ávila!. Con un ambiente
+                    acogedor y
+                    relajante, nuestras habitaciones dobles cuentan con 2 camas para que disfrutes al máximo.
+                </p>
+                <div class="container btnContainer">
+
+                    <button class="CTAbtn ">Aventúrate</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-4 descripcion">
+                <div class="container-fluid title">
+                    <h3> TRIPLE</h3>
+                    <img src="img/camaT.svg" alt="" class="titleIconE">
+                </div>
+
+                <p>La elección perfecta para grupos o familias. Con amplios espacios, instalaciones modernas y
+                    un
+                    ambiente acogedor, te ofrecemos una estancia cómoda y relajante con
+                    3 camas para mayor comodidad. </p>
+
+
+
+                <div class="container btnContainer">
+                    <button class="CTAbtn ">Regístrate</button>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- ALOJAMIENTOS -->
+    <section id="alojamientos" class="container-fluid alojamientos shadow">
+        <h3>ALOJAMIENTOS </h3>
+        <P>EN ARENAS DE SAN PEDRO</P>
+
+        <div class="row itemGroup">
+            <div class="col-6 col-md-4 item" data-aos="flip-up" data-aos-delay="100">
+                <a class="linkAlojamiento"  href="">
+                    <img src="img/aticovut.svg" class="icon" alt="">
+                    <p>Apartamento Ático La Taberna</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 item" data-aos="flip-up" data-aos-delay="200">
+                <a class="linkAlojamiento"  href="">
+                <img src="img/PALOMAS.svg" class="icon" alt="">
+                <p>VUT Las Palomas</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 item" data-aos="flip-up" data-aos-delay="50">
+                <a class="linkAlojamiento" href="">
+                <img src="img/LATABERNA1.svg" class="icon" alt="">
+                <p>VUT La Taberna 1</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 item" data-aos="flip-up" data-aos-delay="150">
+                <a class="linkAlojamiento" href="">
+                <img src="img/Sorpresavut.svg" class="icon" alt="">
+                <p>VUT Sorpresa Suite La Taberna</p>
+                </a>
+            </div>
+            <div class="col-6 col-md-4 item" data-aos="flip-up" data-aos-delay="250">
+                <a class="linkAlojamiento" href="">
+                <img src="img/LOURDES.svg" class="icon" alt="">
+                <p>VUT Lourdes</p>
+                </a>
+            </div>
+            <div class="col-6  col-md-4 item" data-aos="flip-up" data-aos-delay="250">
+                <a class="linkAlojamiento"  href="">
+                <img src="img/LATABERNAHOS.svg" class="icon" alt="">
+                <p>Hostal</p>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <!-- CONTACTO -->
+    <section id="contacto" class="container-fluid contacto">
+        <div class="row">
+            <div class="col-12 colA">
+
+                <div class="container botonBanner">
+                    <img class="logotipo" src="img/logoAzul.svg" alt="">
+
+                    <h4>Habla con Nosotros</h4>
+
+                    <p>
+                        Experimenta comodidad inigualable, un ambiente encantador y un servicio personalizado en nuestra
+                        ubicación ideal. Descubre la belleza de Ávila y disfruta de delicias gastronómicas en nuestro
+                        hostal. Además, aprovecha nuestra proximidad a lugares turísticos como el castillo y la ermita,
+                        haciendo tu estancia aún más memorable y completa.
+                    </p>
+                    <div class="contactoIcon">
+
+                        <img class="icon" src="img/whatsappb.svg" alt="">
+                        <img class="icon" src="img/emailb.svg" alt="">
+                        <img class="icon" src="img/phoneb.svg" alt="">
+                        <img class="icon" src="img/bookingb.svg" alt="">
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-12 colB">
+                <form action="#" method="post">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
+
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" id="correo" name="correo" required>
+
+
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                    <label for="contacto">¿Cómo quieres ser contactarnos?</label>
+                    <select id="contacto" name="contacto" required>
+                        <option value="whatsapp">WhatsApp</option>
+                        <option value="correo">Correo</option>
+                    </select>
+
+
+                    <div class="container btnContainer">
+                        <button class="CTAbtn ">CONTACTANOS</button>
+                    </div>
+            </div>
+            </form>
+
+        </div>
+
+    </section>
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+        <nav>
+            <a href="#home">Inicio</a>
+            <a href="#gallery">Galería</a>
+            <div class="containerimagotipo">
+                <img class="imagotipo" src="img/isotipoAmarillo.svg" alt="">
+            </div>
+            <a class="left" href="#nosotros">Nosotros</a>
+            <a class="left" href="#contacto">Contacto</a>
+        </nav>
+        <p>C. Carrellana, 33, 05400 Arenas de San Pedro, Ávila. <br> +34 920370395</p>
+
+        <div class="container-fluid contactoIcon">
+
+            <img class="icon" src="img/whatsappg.svg" alt="">
+            <img class="icon" src="img/emailg.svg" alt="">
+            <img class="icon" src="img/phoneg.svg" alt="">
+            <img class="icon" src="img/bookingg.svg" alt="">
+        </div>
+
+
+        <p class="cometa">POWERED BY COMETA</p>
+    </footer>
+
+</body>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init({
+        offset: 00,
+        duration: 2500,
+        delay: 500,
+        once: true,
+    });
+</script>
+
+</html>*/
 /*# sourceMappingURL=style.css.map */

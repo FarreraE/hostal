@@ -66,7 +66,6 @@
                             .icon {
                                 width: 40%;
                                 opacity: 0.5;
-                             
                             }
                         }
                     }
@@ -176,9 +175,18 @@
         }
         .servicios {
             .iconGroup {
-                width: 80%;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
                 .iconService {
+                    padding: 5%;
                     width: 25%;
+                    opacity: 0.5;
+                }
+                .icon:hover {
+                    opacity: 1;
                 }
             }
             .descripcionGeneral {
@@ -318,6 +326,513 @@
 @media (min-width: 768px) {
     /* Estilos específicos para dispositivos medianos */
     .body {
+        .home {
+            // height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            font-family: var(--font-Castoro);
+            padding: 0%;
+            .sectionA {
+                width: 5%;
+
+                opacity: 0.1;
+                .cintaA {
+                    transform: scaleX(-1);
+                }
+                .cintaC {
+                    //transform: scaleX(-1);
+                }
+            }
+
+            .sectionB {
+                padding: 1%;
+                header {
+                    padding-top: 1%;
+                    width: 80%;
+                    margin: auto;
+                    nav {
+                        padding-top: 5%;
+                        a {
+                            font-size: 1.2rem;
+                            width: 23%;
+                            font-weight: none;
+                        }
+                        .left {
+                            text-align: right;
+                        }
+                        .containerimagotipo {
+                            width: 8%;
+                            .imagotipo {
+                                width: 80%;
+                                opacity: 0.5;
+                            }
+                        }
+                    }
+                }
+                .mainInformation {
+                    .mainIcon {
+                        width: 20%;
+                        padding-top: 15%;
+                        opacity: 0.5;
+                    }
+                    .infoLogo {
+                        padding-top: 5%;
+                        h1 {
+                            font-size: 3.5em;
+                            letter-spacing: 0.01em;
+                        }
+                        .logotipo {
+                            width: 70%;
+                            padding-top: 1%;
+                        }
+                        p {
+                            padding-top: 0%;
+                            font-size: 1em;
+                            letter-spacing: 0.05em;
+                        }
+                    }
+                    .botonGroup {
+                        //background-color: red;
+                        padding-top: 0%;
+                        .btnContainer {
+                            border: 0.1rem solid var(--color10);
+                            width: 40%;
+                            padding: 0.5%;
+                            border-radius: 0.3em;
+                            margin-top: 10%;
+                            .CTAbtn {
+                                font-size: 1.5em;
+                                letter-spacing: 0.05rem;
+                                font-weight: 500;
+                            }
+                        }
+
+                        .contactoIcon {
+                            width: 60%;
+                            padding-top: 5%;
+                            .link {
+                                .icon {
+                                    width: 40%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .gallery {
+            background-color: var(--color10);
+            height: 400px;
+            //padding-top: 15%;
+            margin-top: 10%;
+            border: #0756a1 solid 1px;
+            border-radius: 1rem;
+            color: #f1f2f2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .nosotros {
+            font-family: var(--font-Quicksand);
+            padding: 10%;
+            .isotipo {
+                .logo {
+                    opacity: 0.1;
+                    width: 20%;
+                }
+            }
+            .descripcion {
+                .logo {
+                    padding-top: 5%;
+                    width: 80%;
+                }
+                p {
+                    font-size: 1em;
+                    width: 80%;
+                }
+            }
+
+            .btnContainer {
+                border: 0.1rem solid var(--color10);
+                width: 40%;
+                padding: 0.8%;
+                opacity: 0.8;
+                display: flex;
+
+                .CTAbtn {
+                    font-size: 1.3em;
+                    letter-spacing: 0.05rem;
+                }
+            }
+        }
+        //revisar
+        .servicios {
+            background-color: rgba(218, 149, 40, 0.05);
+            width: 100%;
+            padding-bottom: 10%;
+            border-radius: 0.5rem;
+            .iconGroup {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+                width: 100%;
+                padding-top: 3%;
+                .iconService {
+                    padding: 2%;
+                    width: 12%;
+                    opacity: 0.5;
+                }
+                .icon:hover {
+                    opacity: 1;
+                }
+            }
+            .descripcionGeneral {
+                background-color: transparent;
+                border-radius: 0.5rem;
+                padding-bottom: 1%;
+                padding-top: 10%;
+                margin-top: 5%;
+            
+                h2 {
+                    font-family: var(--font-Castoro);
+                    color: var(--color60);
+                    text-align: center;
+                    font-size: 2.5rem;
+                    font-weight: bold;
+                }
+                p {
+                    padding: 5%;
+                    padding-top: 2%;
+                    text-align: justify;
+                    text-justify: inter-character;
+                    font-family: var(--font-Quicksand);
+                    background-color: transparent;
+                    border: none;
+                    width: 100%;
+                    font-size: 1.1em;
+                    margin: 0%;
+                }
+
+                .botonGroup {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: var(--font-Castoro);
+                    background-color: transparent;
+                    .banner {
+                        width: 30%;
+                        opacity: 0.3;
+                        margin-top: -0.3%;
+                        display: block;
+                    }
+                    .b2 {
+                        transform: scaleX(-1);
+                    }
+                    .btnContainer {
+                        border: 0.1rem solid var(--color10);
+                        width: 90%;
+                        padding: 0.55%;
+                        border-radius: 0.2em;
+                        opacity: 0.8;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-top: 0%;
+                        background-color: transparent;
+                        .CTAbtn {
+                            font-size: 1.1em;
+                            letter-spacing: 0.05rem;
+                            border: none;
+                            border-radius: inherit;
+                            background-color: var(--color10);
+                            width: 100%;
+                            padding-top: 2%;
+                            padding-bottom: 1%;
+                            color: var(--colorWhite);
+                        }
+                        .CTAbtn:hover {
+                            background-color: var(--color60);
+                        }
+                    }
+
+                    .btnContainer:hover {
+                        opacity: 1;
+                        border: 0.1rem solid var(--color60);
+                    }
+                }
+            }
+            .habitaciones {
+                background-color: transparent;
+                border-radius: 1em;
+                display: flex;
+                justify-content: space-between;
+                margin: auto;
+                margin-top: 2%;
+                width: 100%;
+              
+                
+                .title {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: space-around;
+
+                    .titleIcon {
+                        width: 0%;
+                    }
+                    .titleIconE {
+                        width: 0%;
+                    }
+                }
+                .descripcion {
+                    padding: 1%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding-top: 5%;
+                    padding-bottom: 5%;
+                    h3 {
+                        font-family: var(--font-Castoro);
+                        color: var(--color60);
+                        text-align: left;
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        padding: 5%;
+
+                        text-align: center;
+                        
+                        font-family: var(--font-Quicksand);
+                        border: none;
+                        width: 100%;
+                        margin: auto;
+                        font-size: 0.8em;
+                    }
+                    .btnContainer {
+                        border: 0.1rem solid var(--color60);
+                        //margin-left: 60%;
+                        width: 60%;
+                        padding: 1.5%;
+                        border-radius: 0.2em;
+                        opacity: 0.8;
+                        display: flex;
+                        justify-content: left;
+                        align-items: center;
+                        margin-top: 5%;
+                        font-family: var(--font-Castoro);
+                        background-color: transparent;
+                        .CTAbtn {
+                            font-size: 0.8em;
+                            letter-spacing: 0.05rem;
+                            border: none;
+                            border-radius: inherit;
+                            background-color: var(--color60);
+                            width: 100%;
+                            padding-top: 3%;
+                            padding-bottom: 1%;
+                            color: var(--colorWhite);
+
+                            //font-weight: bold;
+                        }
+                        .CTAbtn:hover {
+                            background-color: var(--color10);
+                        }
+                    }
+
+                    .btnContainer:hover {
+                        opacity: 1;
+                        border: 0.1rem solid var(--color10);
+                    }
+                }
+                .barras {
+                    border: none;
+                    border-right: var(--color10) solid 0.1rem;
+                    border-left: var(--color10) solid 0.1rem;
+                    background-color:transparent;
+                }
+            }
+        }
+        //revisar
+        .alojamientos {
+            padding-top: 5%;
+            padding-bottom: 5%;
+            border-radius: 0.5em;
+            //border: var(--color60) solid 0.12em;
+            background-color: var(--colorWhite);
+            margin-top: 10%;
+            background-color: rgba(7, 86, 161, 0.05);
+            background-image: url(img/decorationb.svg);
+            background-size: cover;
+            width: 100%;
+            h3 {
+                text-align: center;
+                font-family: var(--font-Castoro);
+                color: var(--color60);
+                font-weight: bold;
+                font-size: 3em;
+            }
+            p {
+                text-align: center;
+                font-family: var(--font-Castoro);
+                color: var(--color10);
+                font-weight: bold;
+                font-size: 1.5em;
+                margin-top: -2%;
+                letter-spacing: 0.1rem;
+            }
+            .itemGroup {
+                padding: 1%;
+                border-radius: 0.5rem;
+                border-bottom-left-radius: 2rem;
+                border-bottom-right-radius: 2rem;
+                .item {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    margin-top: 1%;
+                    .icon {
+                        width: 80%;
+                    }
+    
+                    .linkAlojamiento {
+                        text-align: center;
+                        color: var(--color10);
+                        font-weight: bold;
+                        padding-top: 3%;
+                        text-decoration: none;
+                        p {
+                            font-family: var(--font-Quicksand);
+                            font-size: 0.7em;
+                        }
+                    }
+                }
+            }
+        }
+        //revosar
+        .contacto {
+            padding: 1%;
+            padding-top: 2%;
+            padding-bottom: 1%;
+            color: var(--color60);
+            margin-top: 10%;
+            .colA {
+                padding: 2%;
+                display: flex;
+                flex-direction: column;
+                justify-content: stretch;
+                .botonBanner {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-around;
+                    align-items: center;
+                    margin-top: 2%;
+                    padding: 5%;
+                    h4 {
+                        font-family: var(--font-Castoro);
+                        color: var(--color60);
+                        font-size: 1.5rem;
+                        font-weight: bold;
+                        letter-spacing: 0rem;
+                        margin-top: 2%;
+                    }
+                    p {
+                        padding: 4%;
+                        text-align: justify;
+                    }
+                    .contactoIcon {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 1%;
+                        padding-left: 5%;
+                        padding-right: 5%;
+                        border-radius: 0.5rem;
+    
+                        .icon {
+                            width: 10%;
+                            opacity: 1;
+                        }
+                        .icon:hover {
+                            opacity: 1;
+                            scale: 1.2;
+                        }
+                    }
+                }
+            }
+            .colB {
+                padding: 0%;
+                width: 45%;
+                margin: auto;
+                form {
+                    background-color: var(--colorWhite);
+                    padding: 5%;
+                    padding-top: 7%;
+                    padding-bottom: 7%;
+                    border-radius: 1rem;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+    
+                label {
+                    display: block;
+                    margin-bottom: 2%;
+                }
+    
+                input,
+                select,
+                textarea {
+                    width: 100%;
+                    padding: 1%;
+                    margin-bottom: 3%;
+                    border: none;
+                    border-radius: 0.1rem;
+                    box-sizing: border-box;
+                    color: var(--color60);
+                }
+    
+                textarea {
+                    resize: vertical;
+                }
+    
+                .btnContainer {
+                    border: 0.1rem solid var(--color10);
+                    width: 70%;
+                    padding: 1.5%;
+                    border-radius: 0.2em;
+                    opacity: 0.8;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-top: 10%;
+                    font-family: var(--font-Castoro);
+                    .CTAbtn {
+                        font-size: 1em;
+                        letter-spacing: 0.1rem;
+                        border: none;
+                        border-radius: inherit;
+                        background-color: var(--color10);
+                        width: 100%;
+                        padding-top: 2%;
+                        padding-bottom: 1%;
+                        color: var(--colorWhite);
+                        //font-weight: bold;
+                    }
+                    .CTAbtn:hover {
+                        background-color: var(--color60);
+                    }
+                }
+    
+                .btnContainer:hover {
+                    opacity: 1;
+                    border: 0.1rem solid var(--color60);
+                }
+            }
+        }
     }
 }
 
