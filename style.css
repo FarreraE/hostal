@@ -614,6 +614,8 @@
   background-image: url(img/decorationb.svg);
   background-size: cover;
   width: 90%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .body .alojamientos h3 {
@@ -657,16 +659,16 @@
   margin-top: 8%;
 }
 
-.body .alojamientos .itemGroup .item .icon {
-  width: 90%;
-}
-
 .body .alojamientos .itemGroup .item .linkAlojamiento {
   text-align: center;
   color: var(--color10);
   font-weight: bold;
   padding-top: 3%;
   text-decoration: none;
+}
+
+.body .alojamientos .itemGroup .item .linkAlojamiento .icon {
+  width: 90%;
 }
 
 .body .alojamientos .itemGroup .item .linkAlojamiento p {
@@ -1165,6 +1167,7 @@
   }
   .body .servicios .descripcionGeneral h2 {
     font-size: 2.5rem;
+    padding-top: 5%;
   }
   .body .servicios .descripcionGeneral p {
     font-size: 1.1em;
@@ -1448,14 +1451,13 @@
   .body .servicios .descripcionGeneral {
     background-color: transparent;
     border-radius: 0.5rem;
-    padding-bottom: 1%;
-    padding-top: 10%;
     margin-top: 5%;
     -webkit-box-shadow: 0px 0px 0px;
             box-shadow: 0px 0px 0px;
   }
   .body .servicios .descripcionGeneral h2 {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
+    padding-top: 5%;
   }
   .body .servicios .descripcionGeneral p {
     padding: 5%;
@@ -1909,11 +1911,12 @@
     background-color: transparent;
     border-radius: 0.5rem;
     padding-bottom: 1%;
-    padding-top: 8%;
+    padding-top: 6%;
     margin-top: 5%;
   }
   .body .servicios .descripcionGeneral h2 {
     font-size: 3em;
+    padding-top: 0%;
   }
   .body .servicios .descripcionGeneral p {
     padding: 0%;
