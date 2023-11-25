@@ -22,6 +22,16 @@
 .body {
   background-color: var(--colorWhite);
   padding: 2%;
+  max-width: 1400px;
+  margin: auto;
+}
+
+.body .mobile {
+  display: block;
+}
+
+.body .desktop {
+  display: none;
 }
 
 .body .home {
@@ -360,6 +370,14 @@
   border: 0.1rem solid var(--color60);
 }
 
+.body .servicios .mobile {
+  display: block;
+}
+
+.body .servicios .desktop {
+  display: none;
+}
+
 .body .servicios .iconGroup {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,8 +406,9 @@
   background-color: rgba(218, 149, 40, 0.05);
   border-radius: 0.5rem;
   padding-bottom: 10%;
-  padding-top: 10%;
   margin-top: 20%;
+  -webkit-box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
 }
 
 .body .servicios .descripcionGeneral h2 {
@@ -398,6 +417,8 @@
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
+  padding-top: 5%;
+  background-color: red;
 }
 
 .body .servicios .descripcionGeneral p {
@@ -709,27 +730,36 @@
 }
 
 .body .contacto .colA .botonBanner .contactoIcon {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 1%;
-  padding-left: 5%;
-  padding-right: 5%;
-  border-radius: 0.5rem;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0%;
+  margin-top: 2%;
 }
 
-.body .contacto .colA .botonBanner .contactoIcon .icon {
-  width: 10%;
-  opacity: 1;
+.body .contacto .colA .botonBanner .contactoIcon .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.body .contacto .colA .botonBanner .contactoIcon .icon:hover {
+.body .contacto .colA .botonBanner .contactoIcon .link .icon {
+  width: 30%;
+  opacity: 0.5;
+}
+
+.body .contacto .colA .botonBanner .contactoIcon .link .icon:hover {
   opacity: 1;
-  scale: 1.2;
 }
 
 .body .contacto .colB {
@@ -891,20 +921,34 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 80%;
-  margin-top: 0%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0%;
+  margin-top: 2%;
+  width: 50%;
 }
 
-.body footer .contactoIcon .icon {
-  width: 10%;
+.body footer .contactoIcon .link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.body footer .contactoIcon .link .icon {
+  width: 50%;
   opacity: 0.5;
+}
+
+.body footer .contactoIcon .link .icon:hover {
+  opacity: 1;
 }
 
 @media (min-width: 500px) {
@@ -1233,6 +1277,14 @@
 /* Estilos para dispositivos medianos (MD) */
 @media (min-width: 768px) {
   /* Estilos específicos para dispositivos medianos */
+  .body .mobile {
+    display: none;
+    margin: auto;
+  }
+  .body .desktop {
+    display: block;
+    margin: auto;
+  }
   .body .home {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1374,20 +1426,19 @@
     width: 100%;
     padding-bottom: 10%;
     border-radius: 0.5rem;
+    -webkit-box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
   }
-  .body .servicios .iconGroup {
+  .body .servicios .mobile {
+    display: none;
+    background-color: red;
+  }
+  .body .servicios .desktop {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    width: 100%;
+  }
+  .body .servicios .iconGroup {
     padding-top: 3%;
   }
   .body .servicios .iconGroup .iconService {
@@ -1395,47 +1446,24 @@
     width: 12%;
     opacity: 0.5;
   }
-  .body .servicios .iconGroup .icon:hover {
-    opacity: 1;
-  }
   .body .servicios .descripcionGeneral {
     background-color: transparent;
     border-radius: 0.5rem;
     padding-bottom: 1%;
     padding-top: 10%;
     margin-top: 5%;
+    -webkit-box-shadow: 0px 0px 0px;
+            box-shadow: 0px 0px 0px;
   }
   .body .servicios .descripcionGeneral h2 {
-    font-family: var(--font-Castoro);
-    color: var(--color60);
-    text-align: center;
     font-size: 2.5rem;
-    font-weight: bold;
   }
   .body .servicios .descripcionGeneral p {
     padding: 5%;
     padding-top: 2%;
-    text-align: justify;
-    text-justify: inter-character;
-    font-family: var(--font-Quicksand);
-    background-color: transparent;
-    border: none;
-    width: 100%;
+    width: 90%;
     font-size: 1.1em;
-    margin: 0%;
-  }
-  .body .servicios .descripcionGeneral .botonGroup {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    font-family: var(--font-Castoro);
-    background-color: transparent;
+    margin: auto;
   }
   .body .servicios .descripcionGeneral .botonGroup .banner {
     width: 30%;
@@ -1448,51 +1476,17 @@
             transform: scaleX(-1);
   }
   .body .servicios .descripcionGeneral .botonGroup .btnContainer {
-    border: 0.1rem solid var(--color10);
-    width: 90%;
     padding: 0.55%;
-    border-radius: 0.2em;
-    opacity: 0.8;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 0%;
-    background-color: transparent;
   }
   .body .servicios .descripcionGeneral .botonGroup .btnContainer .CTAbtn {
     font-size: 1.1em;
     letter-spacing: 0.05rem;
-    border: none;
-    border-radius: inherit;
-    background-color: var(--color10);
-    width: 100%;
     padding-top: 2%;
     padding-bottom: 1%;
     color: var(--colorWhite);
   }
-  .body .servicios .descripcionGeneral .botonGroup .btnContainer .CTAbtn:hover {
-    background-color: var(--color60);
-  }
-  .body .servicios .descripcionGeneral .botonGroup .btnContainer:hover {
-    opacity: 1;
-    border: 0.1rem solid var(--color60);
-  }
   .body .servicios .habitaciones {
     background-color: transparent;
-    border-radius: 1em;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin: auto;
     margin-top: 2%;
     width: 100%;
   }
@@ -1517,7 +1511,7 @@
     width: 0%;
   }
   .body .servicios .habitaciones .descripcion {
-    padding: 1%;
+    padding: 2%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1525,60 +1519,35 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding-top: 5%;
-    padding-bottom: 5%;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
   }
   .body .servicios .habitaciones .descripcion h3 {
-    font-family: var(--font-Castoro);
-    color: var(--color60);
-    text-align: left;
     font-size: 1.5rem;
-    font-weight: bold;
   }
   .body .servicios .habitaciones .descripcion p {
     padding: 5%;
-    text-align: center;
-    font-family: var(--font-Quicksand);
     border: none;
-    width: 100%;
+    width: 90%;
     margin: auto;
     font-size: 0.8em;
+    text-align: center;
   }
   .body .servicios .habitaciones .descripcion .btnContainer {
-    border: 0.1rem solid var(--color60);
+    border: 0.1rem solid var(--color10);
     width: 60%;
     padding: 1.5%;
-    border-radius: 0.2em;
-    opacity: 0.8;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     margin-top: 5%;
-    font-family: var(--font-Castoro);
-    background-color: transparent;
   }
   .body .servicios .habitaciones .descripcion .btnContainer .CTAbtn {
     font-size: 0.8em;
     letter-spacing: 0.05rem;
     border: none;
-    border-radius: inherit;
-    background-color: var(--color60);
+    background-color: var(--color10);
     width: 100%;
     padding-top: 3%;
     padding-bottom: 1%;
-    color: var(--colorWhite);
-  }
-  .body .servicios .habitaciones .descripcion .btnContainer .CTAbtn:hover {
-    background-color: var(--color10);
   }
   .body .servicios .habitaciones .descripcion .btnContainer:hover {
     opacity: 1;
@@ -1594,64 +1563,24 @@
     padding-top: 5%;
     padding-bottom: 5%;
     border-radius: 0.5em;
-    background-color: var(--colorWhite);
     margin-top: 10%;
-    background-color: rgba(7, 86, 161, 0.05);
-    background-image: url(img/decorationb.svg);
-    background-size: cover;
-    width: 100%;
+    width: 90%;
+    -webkit-box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
   }
   .body .alojamientos h3 {
-    text-align: center;
-    font-family: var(--font-Castoro);
-    color: var(--color60);
-    font-weight: bold;
     font-size: 3em;
   }
   .body .alojamientos p {
-    text-align: center;
-    font-family: var(--font-Castoro);
-    color: var(--color10);
-    font-weight: bold;
     font-size: 1.5em;
     margin-top: -2%;
     letter-spacing: 0.1rem;
   }
-  .body .alojamientos .itemGroup {
-    padding: 1%;
-    border-radius: 0.5rem;
-    border-bottom-left-radius: 2rem;
-    border-bottom-right-radius: 2rem;
-  }
   .body .alojamientos .itemGroup .item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 1%;
+    margin-top: 5%;
   }
   .body .alojamientos .itemGroup .item .icon {
     width: 80%;
-  }
-  .body .alojamientos .itemGroup .item .linkAlojamiento {
-    text-align: center;
-    color: var(--color10);
-    font-weight: bold;
-    padding-top: 3%;
-    text-decoration: none;
-  }
-  .body .alojamientos .itemGroup .item .linkAlojamiento p {
-    font-family: var(--font-Quicksand);
-    font-size: 0.7em;
   }
   .body .contacto {
     padding: 1%;
@@ -1661,17 +1590,8 @@
     margin-top: 10%;
   }
   .body .contacto .colA {
-    padding: 2%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
+    padding: 0%;
+    display: block;
   }
   .body .contacto .colA .botonBanner {
     width: 100%;
@@ -1684,11 +1604,6 @@
             flex-direction: column;
     -ms-flex-pack: distribute;
         justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-top: 2%;
-    padding: 5%;
   }
   .body .contacto .colA .botonBanner h4 {
     font-family: var(--font-Castoro);
@@ -1696,37 +1611,50 @@
     font-size: 1.5rem;
     font-weight: bold;
     letter-spacing: 0rem;
-    margin-top: 2%;
+    margin-top: 0%;
   }
   .body .contacto .colA .botonBanner p {
     padding: 4%;
-    text-align: justify;
+    letter-spacing: 0.05em;
+    font-size: 0.8rem;
+    text-align: unset;
+    text-align: center;
+    margin-top: 2%;
   }
   .body .contacto .colA .botonBanner .contactoIcon {
-    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    padding: 1%;
-    padding-left: 5%;
-    padding-right: 5%;
-    border-radius: 0.5rem;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0%;
+    margin-top: 2%;
   }
-  .body .contacto .colA .botonBanner .contactoIcon .icon {
-    width: 10%;
-    opacity: 1;
+  .body .contacto .colA .botonBanner .contactoIcon .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .body .contacto .colA .botonBanner .contactoIcon .icon:hover {
+  .body .contacto .colA .botonBanner .contactoIcon .link .icon {
+    width: 60%;
+    opacity: 0.5;
+  }
+  .body .contacto .colA .botonBanner .contactoIcon .link .icon:hover {
     opacity: 1;
-    scale: 1.2;
   }
   .body .contacto .colB {
     padding: 0%;
-    width: 45%;
-    margin: auto;
+    width: 50%;
+    display: block;
+    font-size: 0.9em;
   }
   .body .contacto .colB form {
     background-color: var(--colorWhite);
@@ -1739,14 +1667,13 @@
   }
   .body .contacto .colB label {
     display: block;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
   }
   .body .contacto .colB input,
   .body .contacto .colB select,
   .body .contacto .colB textarea {
-    width: 100%;
     padding: 1%;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     border: none;
     border-radius: 0.1rem;
     -webkit-box-sizing: border-box;
@@ -1757,11 +1684,170 @@
     resize: vertical;
   }
   .body .contacto .colB .btnContainer {
-    border: 0.1rem solid var(--color10);
-    width: 70%;
+    width: 60%;
     padding: 1.5%;
     border-radius: 0.2em;
-    opacity: 0.8;
+    margin-top: 8%;
+  }
+  .body .contacto .colB .btnContainer .CTAbtn {
+    font-size: 1.2em;
+    letter-spacing: 0.05rem;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: var(--colorWhite);
+  }
+  .body footer {
+    margin-top: 10%;
+  }
+  .body footer nav {
+    width: 70%;
+  }
+  .body footer nav a {
+    font-size: 1rem;
+    width: 23%;
+  }
+  .body footer p {
+    font-size: 0.8em;
+  }
+  .body footer .contactoIcon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0%;
+    margin-top: 2%;
+    width: 50%;
+  }
+  .body footer .contactoIcon .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body footer .contactoIcon .link .icon {
+    width: 30%;
+    opacity: 0.5;
+  }
+  .body footer .contactoIcon .link .icon:hover {
+    opacity: 1;
+  }
+}
+
+/* Estilos para dispositivos grandes (LG y XL) */
+@media (min-width: 992px) {
+  /* Estilos específicos para dispositivos grandes */
+  .body .mobile {
+    display: none;
+  }
+  .body .desktop {
+    display: block;
+  }
+  .body .home {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: stretch;
+        -ms-flex-align: stretch;
+            align-items: stretch;
+    font-family: var(--font-Castoro);
+    padding: 0%;
+  }
+  .body .home .sectionA {
+    width: 5%;
+    opacity: 0.1;
+  }
+  .body .home .sectionA .cintaA {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .body .home .sectionB {
+    padding: 1%;
+  }
+  .body .home .sectionB header {
+    padding-top: 1%;
+    width: 80%;
+    margin: auto;
+  }
+  .body .home .sectionB header nav {
+    padding-top: 2%;
+  }
+  .body .home .sectionB header nav a {
+    font-size: 1.3rem;
+    width: 23%;
+    font-weight: none;
+  }
+  .body .home .sectionB header nav .left {
+    text-align: right;
+  }
+  .body .home .sectionB header nav .containerimagotipo {
+    width: 8%;
+  }
+  .body .home .sectionB header nav .containerimagotipo .imagotipo {
+    width: 80%;
+    opacity: 0.5;
+  }
+  .body .home .sectionB .mainInformation .mainIcon {
+    width: 15%;
+    padding-top: 15%;
+    opacity: 0.5;
+  }
+  .body .home .sectionB .mainInformation .infoLogo {
+    padding-top: 5%;
+  }
+  .body .home .sectionB .mainInformation .infoLogo h1 {
+    font-size: 4em;
+    letter-spacing: 0.01em;
+  }
+  .body .home .sectionB .mainInformation .infoLogo .logotipo {
+    width: 60%;
+    padding-top: 1%;
+  }
+  .body .home .sectionB .mainInformation .infoLogo p {
+    padding-top: 0%;
+    font-size: 1.2em;
+    letter-spacing: 0.05em;
+  }
+  .body .home .sectionB .mainInformation .botonGroup {
+    padding-top: 0%;
+  }
+  .body .home .sectionB .mainInformation .botonGroup .btnContainer {
+    border: 0.1rem solid var(--color10);
+    width: 40%;
+    padding: 0.5%;
+    border-radius: 0.3em;
+    margin-top: 5%;
+  }
+  .body .home .sectionB .mainInformation .botonGroup .btnContainer .CTAbtn {
+    font-size: 1.5em;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+  }
+  .body .home .sectionB .mainInformation .botonGroup .contactoIcon {
+    width: 60%;
+    padding-top: 5%;
+  }
+  .body .home .sectionB .mainInformation .botonGroup .contactoIcon .link .icon {
+    width: 40%;
+  }
+  .body .gallery {
+    background-color: var(--color10);
+    height: 400px;
+    margin-top: 10%;
+    border: #0756a1 solid 1px;
+    border-radius: 1rem;
+    color: #f1f2f2;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1771,45 +1857,830 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 10%;
-    font-family: var(--font-Castoro);
   }
-  .body .contacto .colB .btnContainer .CTAbtn {
-    font-size: 1em;
-    letter-spacing: 0.1rem;
-    border: none;
-    border-radius: inherit;
-    background-color: var(--color10);
+  .body .nosotros {
+    font-family: var(--font-Quicksand);
+    padding: 10%;
+  }
+  .body .nosotros .isotipo .logo {
+    opacity: 0.1;
+    width: 15%;
+  }
+  .body .nosotros .descripcion .logo {
+    padding-top: 5%;
+    width: 80%;
+  }
+  .body .nosotros .descripcion p {
+    padding-top: 5%;
+    font-size: 1.2em;
+    width: 80%;
+    letter-spacing: 0em;
+  }
+  .body .nosotros .btnContainer {
+    border: 0.1rem solid var(--color10);
+    width: 30%;
+    padding: 0.8%;
+    opacity: 0.8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 3%;
+  }
+  .body .nosotros .btnContainer .CTAbtn {
+    font-size: 1.4em;
+    letter-spacing: 0.05rem;
+  }
+  .body .servicios {
+    background-color: rgba(218, 149, 40, 0.05);
     width: 100%;
+    padding-bottom: 8%;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
+  }
+  .body .servicios .iconGroup {
     padding-top: 2%;
+  }
+  .body .servicios .iconGroup .iconService {
+    padding: 2%;
+    width: 10%;
+    opacity: 0.5;
+  }
+  .body .servicios .descripcionGeneral {
+    background-color: transparent;
+    border-radius: 0.5rem;
+    padding-bottom: 1%;
+    padding-top: 8%;
+    margin-top: 5%;
+  }
+  .body .servicios .descripcionGeneral h2 {
+    font-size: 3em;
+  }
+  .body .servicios .descripcionGeneral p {
+    padding: 0%;
+    padding-top: 1%;
+    width: 70%;
+    font-size: 1.2em;
+    margin: auto;
+    letter-spacing: 0em;
+  }
+  .body .servicios .descripcionGeneral .botonGroup {
+    margin-top: 3%;
+  }
+  .body .servicios .descripcionGeneral .botonGroup .banner {
+    width: 30%;
+    opacity: 0.3;
+    margin-top: -0.3%;
+    display: block;
+  }
+  .body .servicios .descripcionGeneral .botonGroup .b2 {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .body .servicios .descripcionGeneral .botonGroup .btnContainer {
+    padding: 0.55%;
+    width: 30%;
+  }
+  .body .servicios .descripcionGeneral .botonGroup .btnContainer .CTAbtn {
+    font-size: 1.2em;
+    letter-spacing: 0.05rem;
+    padding-top: 3%;
     padding-bottom: 1%;
     color: var(--colorWhite);
   }
-  .body .contacto .colB .btnContainer .CTAbtn:hover {
-    background-color: var(--color60);
+  .body .servicios .habitaciones {
+    background-color: transparent;
+    margin-top: 2%;
+    width: 100%;
   }
-  .body .contacto .colB .btnContainer:hover {
+  .body .servicios .habitaciones .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .body .servicios .habitaciones .title .titleIcon {
+    width: 0%;
+  }
+  .body .servicios .habitaciones .title .titleIconE {
+    width: 0%;
+  }
+  .body .servicios .habitaciones .descripcion {
+    padding: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  .body .servicios .habitaciones .descripcion h3 {
+    font-size: 2rem;
+  }
+  .body .servicios .habitaciones .descripcion p {
+    padding: 5%;
+    border: none;
+    width: 90%;
+    margin: auto;
+    font-size: 1em;
+    text-align: center;
+  }
+  .body .servicios .habitaciones .descripcion .btnContainer {
+    border: 0.1rem solid var(--color10);
+    width: 60%;
+    padding: 1.5%;
+    margin-top: 5%;
+  }
+  .body .servicios .habitaciones .descripcion .btnContainer .CTAbtn {
+    font-size: 1.2em;
+    letter-spacing: 0.05rem;
+    border: none;
+    background-color: var(--color10);
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+  }
+  .body .servicios .habitaciones .descripcion .btnContainer:hover {
     opacity: 1;
-    border: 0.1rem solid var(--color60);
+    border: 0.1rem solid var(--color10);
   }
-}
-
-/* Estilos para dispositivos grandes (LG y XL) */
-@media (min-width: 992px) {
-  /* Estilos específicos para dispositivos grandes */
-  .body {
-    background-color: blue;
+  .body .servicios .habitaciones .barras {
+    border: none;
+    border-right: var(--color10) solid 0.1rem;
+    border-left: var(--color10) solid 0.1rem;
+    background-color: transparent;
+  }
+  .body .alojamientos {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 0.5em;
+    margin-top: 10%;
+    width: 90%;
+    -webkit-box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
+  }
+  .body .alojamientos h3 {
+    font-size: 4em;
+  }
+  .body .alojamientos p {
+    font-size: 2em;
+    margin-top: -2%;
+    letter-spacing: 0.1rem;
+  }
+  .body .alojamientos .itemGroup .item {
+    margin-top: 2%;
+  }
+  .body .alojamientos .itemGroup .item .icon {
+    width: 90%;
+  }
+  .body .alojamientos .itemGroup .item .linkAlojamiento p {
+    font-size: 1em;
+  }
+  .body .contacto {
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: var(--color60);
+    margin-top: 10%;
+  }
+  .body .contacto .colA {
+    padding-top: 1%;
+    display: block;
+  }
+  .body .contacto .colA .botonBanner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .body .contacto .colA .botonBanner h4 {
+    font-family: var(--font-Castoro);
+    color: var(--color60);
+    font-size: 1.5rem;
+    font-weight: bold;
+    letter-spacing: 0rem;
+    margin-top: 0%;
+  }
+  .body .contacto .colA .botonBanner p {
+    padding: 4%;
+    letter-spacing: 0.05em;
+    font-size: 1em;
+    text-align: justify;
+    margin-top: 3%;
+  }
+  .body .contacto .colA .botonBanner .contactoIcon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0%;
+    margin-top: 3%;
+  }
+  .body .contacto .colA .botonBanner .contactoIcon .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body .contacto .colA .botonBanner .contactoIcon .link .icon {
+    width: 60%;
+    opacity: 0.5;
+  }
+  .body .contacto .colA .botonBanner .contactoIcon .link .icon:hover {
+    opacity: 1;
+  }
+  .body .contacto .colB {
+    padding: 0%;
+    width: 50%;
+    display: block;
+    font-size: 1em;
+  }
+  .body .contacto .colB form {
+    background-color: var(--colorWhite);
+    padding: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .body .contacto .colB label {
+    display: block;
+    margin-bottom: 1%;
+  }
+  .body .contacto .colB input,
+  .body .contacto .colB select,
+  .body .contacto .colB textarea {
+    padding: 1%;
+    margin-bottom: 2%;
+    border: none;
+    border-radius: 0.1rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: var(--color60);
+  }
+  .body .contacto .colB textarea {
+    resize: vertical;
+  }
+  .body .contacto .colB .btnContainer {
+    width: 50%;
+    padding: 1.5%;
+    border-radius: 0.2em;
+    margin-top: 8%;
+  }
+  .body .contacto .colB .btnContainer .CTAbtn {
+    font-size: 1.2em;
+    letter-spacing: 0.05rem;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: var(--colorWhite);
+  }
+  .body footer {
+    margin-top: 10%;
+  }
+  .body footer nav {
+    width: 50%;
+  }
+  .body footer nav a {
+    font-size: 1rem;
+    width: 23%;
+  }
+  .body footer p {
+    margin: 2%;
+    padding-top: 0%;
+    font-size: 1em;
+  }
+  .body footer .cometa {
+    font-size: 1em;
+    margin-top: 2%;
+  }
+  .body footer .contactoIcon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0%;
+    margin-top: 0%;
+    width: 40%;
+  }
+  .body footer .contactoIcon .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body footer .contactoIcon .link .icon {
+    width: 30%;
+    opacity: 0.5;
+  }
+  .body footer .contactoIcon .link .icon:hover {
+    opacity: 1;
   }
 }
 
 /* Estilos para dispositivos grandes (LG y XL) */
 @media (min-width: 1200px) {
   /* Estilos específicos para dispositivos grandes */
-  .body {
-    background-color: yellow;
+  .body .mobile {
+    display: none;
+  }
+  .body .desktop {
+    display: block;
+  }
+  .body .home {
+    padding: 0%;
+  }
+  .body .home .sectionA {
+    width: 3%;
+    opacity: 0.1;
+  }
+  .body .home .sectionA .cintaA {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .body .home .sectionB {
+    padding: 1%;
+  }
+  .body .home .sectionB header {
+    padding-top: 1%;
+    width: 60%;
+    margin: auto;
+  }
+  .body .home .sectionB header nav {
+    padding-top: 0%;
+  }
+  .body .home .sectionB header nav a {
+    font-size: 1.3rem;
+    width: 23%;
+    font-weight: none;
+  }
+  .body .home .sectionB header nav .left {
+    text-align: right;
+  }
+  .body .home .sectionB header nav .containerimagotipo {
+    width: 8%;
+  }
+  .body .home .sectionB header nav .containerimagotipo .imagotipo {
+    width: 50%;
+    opacity: 0.5;
+  }
+  .body .home .sectionB .mainInformation .mainIcon {
+    width: 10%;
+    padding-top: 5%;
+    opacity: 0.5;
+  }
+  .body .home .sectionB .mainInformation .infoLogo {
+    padding-top: 5%;
+  }
+  .body .home .sectionB .mainInformation .infoLogo h1 {
+    font-size: 4em;
+    letter-spacing: 0.05em;
+  }
+  .body .home .sectionB .mainInformation .infoLogo .logotipo {
+    width: 50%;
+    padding-top: 2%;
+  }
+  .body .home .sectionB .mainInformation .infoLogo p {
+    padding-top: 0%;
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+  }
+  .body .home .sectionB .mainInformation .botonGroup {
+    padding-top: 0%;
+  }
+  .body .home .sectionB .mainInformation .botonGroup .btnContainer {
+    border: 0.1rem solid var(--color10);
+    width: 25%;
+    padding: 0.5%;
+    border-radius: 0.3em;
+    margin-top: 2%;
+  }
+  .body .home .sectionB .mainInformation .botonGroup .btnContainer .CTAbtn {
+    font-size: 2em;
+    letter-spacing: 0.05rem;
+    font-weight: 500;
+  }
+  .body .home .sectionB .mainInformation .botonGroup .contactoIcon {
+    width: 40%;
+    padding-top: 4%;
+  }
+  .body .home .sectionB .mainInformation .botonGroup .contactoIcon .link .icon {
+    width: 50%;
+  }
+  .body .gallery {
+    background-color: var(--color10);
+    height: 400px;
+    margin-top: 10%;
+    border: #0756a1 solid 1px;
+    border-radius: 1rem;
+    color: #f1f2f2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .body .nosotros {
+    font-family: var(--font-Quicksand);
+    padding: 10%;
+  }
+  .body .nosotros .isotipo .logo {
+    opacity: 0.1;
+    width: 10%;
+  }
+  .body .nosotros .descripcion .logo {
+    padding-top: 3%;
+    width: 60%;
+  }
+  .body .nosotros .descripcion p {
+    padding-top: 3%;
+    font-size: 1.2em;
+    width: 60%;
+    letter-spacing: 0em;
+  }
+  .body .nosotros .btnContainer {
+    border: 0.1rem solid var(--color10);
+    width: 28%;
+    padding: 0.4%;
+    opacity: 0.8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 3%;
+  }
+  .body .nosotros .btnContainer .CTAbtn {
+    font-size: 1.6em;
+    letter-spacing: 0.05rem;
+  }
+  .body .servicios {
+    background-color: rgba(218, 149, 40, 0.05);
+    width: 80%;
+    padding-bottom: 4%;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
+  }
+  .body .servicios .iconGroup {
+    padding-top: 2%;
+    width: 90%;
+  }
+  .body .servicios .iconGroup .iconService {
+    padding: 2%;
+    width: 8%;
+    opacity: 0.5;
+  }
+  .body .servicios .descripcionGeneral {
+    background-color: transparent;
+    border-radius: 0.5rem;
+    padding-bottom: 1%;
+    padding-top: 6%;
+    margin-top: 5%;
+  }
+  .body .servicios .descripcionGeneral h2 {
+    font-size: 3em;
+  }
+  .body .servicios .descripcionGeneral p {
+    padding: 0%;
+    padding-top: 1%;
+    width: 70%;
+    font-size: 1.2em;
+    margin: auto;
+    letter-spacing: 0em;
+  }
+  .body .servicios .descripcionGeneral .botonGroup {
+    margin-top: 3%;
+  }
+  .body .servicios .descripcionGeneral .botonGroup .banner {
+    width: 30%;
+    opacity: 0.3;
+    margin-top: -0.3%;
+    display: block;
+  }
+  .body .servicios .descripcionGeneral .botonGroup .b2 {
+    -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+  }
+  .body .servicios .descripcionGeneral .botonGroup .btnContainer {
+    padding: 0.55%;
+    width: 30%;
+  }
+  .body .servicios .descripcionGeneral .botonGroup .btnContainer .CTAbtn {
+    font-size: 1.2em;
+    letter-spacing: 0.05rem;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: var(--colorWhite);
+  }
+  .body .servicios .habitaciones {
+    background-color: transparent;
+    margin-top: 1%;
+    width: 100%;
+  }
+  .body .servicios .habitaciones .title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .body .servicios .habitaciones .title .titleIcon {
+    width: 0%;
+  }
+  .body .servicios .habitaciones .title .titleIconE {
+    width: 0%;
+  }
+  .body .servicios .habitaciones .descripcion {
+    padding: 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body .servicios .habitaciones .descripcion h3 {
+    font-size: 2rem;
+    margin: 0%;
+  }
+  .body .servicios .habitaciones .descripcion p {
+    padding: 5%;
+    border: none;
+    width: 100%;
+    margin: auto;
+    font-size: 0.9em;
+    text-align: center;
+  }
+  .body .servicios .habitaciones .descripcion .btnContainer {
+    border: 0.1rem solid var(--color10);
+    width: 60%;
+    padding: 1.5%;
+    margin-top: 5%;
+  }
+  .body .servicios .habitaciones .descripcion .btnContainer .CTAbtn {
+    font-size: 1.2em;
+    letter-spacing: 0.05rem;
+    border: none;
+    background-color: var(--color10);
+    width: 100%;
+    padding-top: 5%;
+    padding-bottom: 1%;
+  }
+  .body .servicios .habitaciones .descripcion .btnContainer:hover {
+    opacity: 1;
+    border: 0.1rem solid var(--color10);
+  }
+  .body .servicios .habitaciones .barras {
+    border: none;
+    border-right: var(--color10) solid 0.1rem;
+    border-left: var(--color10) solid 0.1rem;
+    background-color: transparent;
+  }
+  .body .alojamientos {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 0.5em;
+    margin-top: 15%;
+    width: 90%;
+    -webkit-box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
+  }
+  .body .alojamientos h3 {
+    font-size: 4em;
+  }
+  .body .alojamientos p {
+    font-size: 2em;
+    margin-top: -2%;
+    letter-spacing: 0.1rem;
+  }
+  .body .alojamientos .itemGroup .item {
+    margin-top: 2%;
+  }
+  .body .alojamientos .itemGroup .item .icon {
+    width: 90%;
+  }
+  .body .alojamientos .itemGroup .item .linkAlojamiento p {
+    font-size: 1em;
+  }
+  .body .contacto {
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    color: var(--color60);
+    margin-top: 10%;
+  }
+  .body .contacto .colA {
+    padding-top: 0%;
+    display: block;
+  }
+  .body .contacto .colA .botonBanner {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .body .contacto .colA .botonBanner h4 {
+    font-family: var(--font-Castoro);
+    color: var(--color60);
+    font-size: 2.2rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    margin-top: 0%;
+    text-align: center;
+  }
+  .body .contacto .colA .botonBanner p {
+    padding: 3%;
+    letter-spacing: 0em;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-top: 3%;
+    width: 90%;
+  }
+  .body .contacto .colA .botonBanner .contactoIcon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0%;
+    margin-top: 5%;
+  }
+  .body .contacto .colA .botonBanner .contactoIcon .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body .contacto .colA .botonBanner .contactoIcon .link .icon {
+    width: 40%;
+    opacity: 0.5;
+  }
+  .body .contacto .colA .botonBanner .contactoIcon .link .icon:hover {
+    opacity: 1;
+  }
+  .body .contacto .colB {
+    padding: 0%;
+    width: 40%;
+    display: block;
+    font-size: 1em;
+    height: 10%;
+  }
+  .body .contacto .colB form {
+    background-color: var(--colorWhite);
+    padding: 5%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    border-radius: 1rem;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 0%;
+  }
+  .body .contacto .colB label {
+    display: block;
+    margin-bottom: 1%;
+  }
+  .body .contacto .colB input,
+  .body .contacto .colB select,
+  .body .contacto .colB textarea {
+    padding: 1%;
+    margin-bottom: 2%;
+    border: none;
+    border-radius: 0.1rem;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: var(--color60);
+  }
+  .body .contacto .colB textarea {
+    resize: vertical;
+  }
+  .body .contacto .colB .btnContainer {
+    width: 50%;
+    padding: 1.5%;
+    border-radius: 0.2em;
+    margin-top: 8%;
+  }
+  .body .contacto .colB .btnContainer .CTAbtn {
+    font-size: 1.2em;
+    letter-spacing: 0.05rem;
+    width: 100%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+    color: var(--colorWhite);
+  }
+  .body footer {
+    margin-top: 10%;
+  }
+  .body footer nav {
+    width: 50%;
+  }
+  .body footer nav a {
+    font-size: 1.2rem;
+    width: 23%;
+  }
+  .body footer p {
+    margin: 2%;
+    padding-top: 0%;
+    font-size: 1.2em;
+  }
+  .body footer .cometa {
+    font-size: 1em;
+    margin-top: 2%;
+  }
+  .body footer .contactoIcon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0%;
+    margin-top: 0%;
+    width: 40%;
+  }
+  .body footer .contactoIcon .link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .body footer .contactoIcon .link .icon {
+    width: 30%;
+    opacity: 0.5;
+  }
+  .body footer .contactoIcon .link .icon:hover {
+    opacity: 1;
   }
 }
 
+/* Estilos para dispositivos grandes (LG y XL) */
 /*
 Apartamento Ático La Taberna
 Vut Las Palomas

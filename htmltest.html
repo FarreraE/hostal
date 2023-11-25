@@ -1,39 +1,3 @@
-<!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Style -->
-    <link rel="stylesheet" href="style.css">
-    <!--Google Fonts-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Quicksand:wght@300;400;500;600&display=swap"
-        rel="stylesheet">
-
-    <!--Animation-->
-    <script src="cod.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <!--FAVICON-->
-    <link rel="short icon" href="favicon/favicon.ico" type=“image/png”>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2a2e32">
-    <meta name="msapplication-TileColor" content="#00aba9">
-    <meta name="theme-color" content="#f1f2f2">
-
-    <!--TITTLE-->
-    <title>Hostal La Taberna</title>
-
-</head>
-
 <body class="body">
     <!-- HEAD -->
     <section id="home" class="container-fluid home">
@@ -41,19 +5,6 @@
             <img class="cintaA" src="img/patronLateral.svg" alt="">
         </div>
         <div class="sectionB">
-
-            <header class="desktop" data-aos="fade-up">
-                <nav>
-                    <a href="#home">Inicio</a>
-                    <a href="#gallery">Galería</a>
-                    <div class="containerimagotipo">
-                        <img class="imagotipo" src="img/isotipoAmarillo.svg" alt="">
-                    </div>
-                    <a class="left" href="#nosotros">Nosotros</a>
-                    <a class="left" href="#contacto">Contacto</a>
-                </nav>
-            </header>
-
             <div class="container-fluid mainInformation">
                 <img class="mainIcon" data-aos="fade-down" src="img/isotipoAmarillo.svg" alt="">
                 <div class="infoLogo">
@@ -63,10 +14,6 @@
                     <p data-aos="fade-up">C. Carrellana, 33, 05400 Arenas de San Pedro, Ávila</p>
                 </div>
                 <div class="container botonGroup" data-aos="fade-up">
-
-                    <div class="container btnContainer">
-                        <button class="CTAbtn">RESERVA HOY</button>
-                    </div>
                     <div class="contactoIcon">
                         <a class="link"
                             href="https://api.whatsapp.com/send?phone=34722201905&text=Hola,%20quiero%20consultar%20la%20disponibilidad%20en%20la%20taberna.%20"
@@ -79,10 +26,14 @@
                         <a class="link" href="https://www.booking.com/hotel/es/hostal-la-taverna.es.html"
                             target="_blank"><img class="icon" src="img/booking.svg" alt=""></a>
                     </div>
+                    <div class="container btnContainer">
+                        <button class="CTAbtn">RESERVA HOY</button>
+                    </div>
+
                 </div>
             </div>
 
-            <header class="mobile" data-aos="fade-up">
+            <header data-aos="fade-up">
                 <nav>
                     <a href="#home">Inicio</a>
                     <a href="#gallery">Galería</a>
@@ -93,8 +44,6 @@
                     <a class="left" href="#contacto">Contacto</a>
                 </nav>
             </header>
-
-
         </div>
         <div class="sectionA">
             <img class="cintaC" src="img/patronLateral.svg" alt="">
@@ -129,7 +78,7 @@
 
     </section>
     <!-- SERVICIOS -->
-    <section id="servicios" class="container-fluid servicios">
+    <section id="servios" class="container-fluid servicios ">
 
         <div class="container-fluid iconGroup mobile" data-aos="flip-left">
             <img class="iconService" src="img/cama.svg" alt="">
@@ -141,8 +90,8 @@
             <img class="iconService" src="img/food.svg" alt="">
             <img class="iconService" src="img/drinks.svg" alt="">
         </div>
-
-        <div class="container-fluid descripcionGeneral">
+        
+        <div class="container-fluid descripcionGeneral shadow">
             <h2>HABITACIONES</h2>
 
             <p>
@@ -151,6 +100,23 @@
                 de la cama para tu conveniencia. Disfruta de la zona de comedor para momentos especiales. ¡Haz tu
                 estancia cómoda y acogedora con nosotros!
             </p>
+            <!--
+            <p>Nuestras habitaciones están diseñadas para brindarte una experiencia inolvidable.
+                Equipadas
+                con un
+                práctico escritorio, TV de pantalla plana para tus momentos de relax y suave ropa de cama
+                que te
+                abraza, te aseguramos comodidad en cada rincón. Accede a tu espacio de manera exclusiva
+                mediante
+                encantadoras escaleras, disfruta de una entrada privada para tu tranquilidad y ajusta el
+                ambiente a
+                tu gusto con aire acondicionado individual y calefacción. Las toallas mullidas y el armario
+                están
+                listos para tu uso personal, y el enchufe cerca de la cama facilita la recarga de tus
+                dispositivos.
+                Además, la zona de comedor te invita a saborear momentos especiales ¡Haz de tu estancia una
+                experiencia cómoda y acogedora con nosotros!</p> -->
+
 
             <div class="container-fluid botonGroup" data-aos="fade-dow" data-aos-anchor-placement="bottom-bottom">
                 <img class="banner b2" src="img/patronLateralH.svg" alt="">
@@ -160,23 +126,12 @@
                 <img class="banner" src="img/patronLateralH.svg" alt="">
             </div>
 
-            <div class="container-fluid iconGroup desktop" data-aos="flip-left">
-                <img class="iconService" src="img/cama.svg" alt="">
-                <img class="iconService" src="img/wifi.svg" alt="">
-                <img class="iconService" src="img/parking.svg" alt="">
-                <img class="iconService" src="img/tv.svg" alt="">
-                <img class="iconService" src="img/ac.svg" alt="">
-                <img class="iconService" src="img/hairdryier.svg" alt="">
-                <img class="iconService" src="img/food.svg" alt="">
-                <img class="iconService" src="img/drinks.svg" alt="">
-            </div>
         </div>
-        <div class="row habitaciones ">
+        <div class="row habitaciones shadow">
             <div class="col-12 col-md-4 descripcion">
                 <div class="container-fluid title">
-                    <img class="titleIcon" src="img/camaS.svg">
                     <h3> Sencilla</h3>
-
+                    <img class="titleIcon" src="img/camaS.svg">
                 </div>
                 <p>Habitacion perfectas para viajeros solitarios en busca de un refugio tranquilo en Arenas de
                     San
@@ -190,8 +145,9 @@
 
             <div class="col-12 col-md-4 descripcion barras">
                 <div class="container-fluid title">
-                    <img src="img/camad.svg" alt="" class="titleIcon">
+
                     <h3> DOBLE</h3>
+                    <img src="img/camad.svg" alt="" class="titleIcon">
                 </div>
 
                 <p>Para parejas o amigos que deseen escapar a Arenas de San Pedro, Ávila!. Con un ambiente
@@ -206,8 +162,8 @@
 
             <div class="col-12 col-md-4 descripcion">
                 <div class="container-fluid title">
-                    <img src="img/camaT.svg" alt="" class="titleIconE">
                     <h3> TRIPLE</h3>
+                    <img src="img/camaT.svg" alt="" class="titleIconE">
                 </div>
 
                 <p>La elección perfecta para grupos o familias. Con amplios espacios, instalaciones modernas y
@@ -226,45 +182,45 @@
         </div>
     </section>
     <!-- ALOJAMIENTOS -->
-    <section id="alojamientos" class="container-fluid alojamientos ">
+    <section id="alojamientos" class="container-fluid alojamientos shadow">
         <h3>ALOJAMIENTOS </h3>
         <P>EN ARENAS DE SAN PEDRO</P>
 
         <div class="row itemGroup">
             <div class="col-6 col-md-4 item" data-aos="flip-up" data-aos-delay="100">
-                <a class="linkAlojamiento" href="">
+                <a class="linkAlojamiento"  href="">
                     <img src="img/aticovut.svg" class="icon" alt="">
                     <p>Apartamento Ático La Taberna</p>
                 </a>
             </div>
             <div class="col-6 col-md-4 item" data-aos="flip-up" data-aos-delay="200">
-                <a class="linkAlojamiento" href="">
-                    <img src="img/PALOMAS.svg" class="icon" alt="">
-                    <p>VUT Las Palomas</p>
+                <a class="linkAlojamiento"  href="">
+                <img src="img/PALOMAS.svg" class="icon" alt="">
+                <p>VUT Las Palomas</p>
                 </a>
             </div>
             <div class="col-6 col-md-4 item" data-aos="flip-up" data-aos-delay="50">
                 <a class="linkAlojamiento" href="">
-                    <img src="img/LATABERNA1.svg" class="icon" alt="">
-                    <p>VUT La Taberna 1</p>
+                <img src="img/LATABERNA1.svg" class="icon" alt="">
+                <p>VUT La Taberna 1</p>
                 </a>
             </div>
             <div class="col-6 col-md-4 item" data-aos="flip-up" data-aos-delay="150">
                 <a class="linkAlojamiento" href="">
-                    <img src="img/Sorpresavut.svg" class="icon" alt="">
-                    <p>VUT Sorpresa Suite La Taberna</p>
+                <img src="img/Sorpresavut.svg" class="icon" alt="">
+                <p>VUT Sorpresa Suite La Taberna</p>
                 </a>
             </div>
             <div class="col-6 col-md-4 item" data-aos="flip-up" data-aos-delay="250">
                 <a class="linkAlojamiento" href="">
-                    <img src="img/LOURDES.svg" class="icon" alt="">
-                    <p>VUT Lourdes</p>
+                <img src="img/LOURDES.svg" class="icon" alt="">
+                <p>VUT Lourdes</p>
                 </a>
             </div>
             <div class="col-6  col-md-4 item" data-aos="flip-up" data-aos-delay="250">
-                <a class="linkAlojamiento" href="">
-                    <img src="img/LATABERNAHOS.svg" class="icon" alt="">
-                    <p>Hostal</p>
+                <a class="linkAlojamiento"  href="">
+                <img src="img/LATABERNAHOS.svg" class="icon" alt="">
+                <p>Hostal</p>
                 </a>
             </div>
         </div>
@@ -273,7 +229,7 @@
     <!-- CONTACTO -->
     <section id="contacto" class="container-fluid contacto">
         <div class="row">
-            <div class="col-12 col-md-6  colA">
+            <div class="col-12 colA">
 
                 <div class="container botonBanner">
                     <img class="logotipo" src="img/logoAzul.svg" alt="">
@@ -287,28 +243,24 @@
                         haciendo tu estancia aún más memorable y completa.
                     </p>
                     <div class="contactoIcon">
-                        <a class="link"
-                            href="https://api.whatsapp.com/send?phone=34722201905&text=Hola,%20quiero%20consultar%20la%20disponibilidad%20en%20la%20taberna.%20"
-                            target="_blank">
-                            <img class="icon" src="img/whatsappb.svg" alt="">
-                        </a>
-                        <a class="link" href="mailto:elcorreoquequieres@correo.com">
-                            <img class="icon" src="img/emailb.svg" alt=""></a>
-                        <a class="link" href="tel:+34722201905"><img class="icon" src="img/phoneb.svg" alt=""></a>
-                        <a class="link" href="https://www.booking.com/hotel/es/hostal-la-taverna.es.html"
-                            target="_blank"><img class="icon" src="img/bookingb.svg" alt=""></a>
+
+                        <img class="icon" src="img/whatsappb.svg" alt="">
+                        <img class="icon" src="img/emailb.svg" alt="">
+                        <img class="icon" src="img/phoneb.svg" alt="">
+                        <img class="icon" src="img/bookingb.svg" alt="">
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="col-12 col-md-6  colB">
+            <div class="col-12 colB">
                 <form action="#" method="post">
                     <label for="nombre">Nombre:</label>
                     <input type="text" id="nombre" name="nombre" required>
 
-                    
+                    <label for="telefono">Número de Teléfono:</label>
+                    <input type="tel" id="telefono" name="telefono" required>
 
                     <label for="correo">Correo Electrónico:</label>
                     <input type="email" id="correo" name="correo" required>
@@ -317,7 +269,7 @@
                     <label for="mensaje">Mensaje:</label>
                     <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-                    <label for="contacto">¿Cómo quieres contactarnos?</label>
+                    <label for="contacto">¿Cómo quieres ser contactarnos?</label>
                     <select id="contacto" name="contacto" required>
                         <option value="whatsapp">WhatsApp</option>
                         <option value="correo">Correo</option>
@@ -339,7 +291,7 @@
             <a href="#home">Inicio</a>
             <a href="#gallery">Galería</a>
             <div class="containerimagotipo">
-                <img class="imagotipo" src="img/isotipoGris.svg" alt="">
+                <img class="imagotipo" src="img/isotipoAmarillo.svg" alt="">
             </div>
             <a class="left" href="#nosotros">Nosotros</a>
             <a class="left" href="#contacto">Contacto</a>
@@ -347,16 +299,11 @@
         <p>C. Carrellana, 33, 05400 Arenas de San Pedro, Ávila. <br> +34 920370395</p>
 
         <div class="container-fluid contactoIcon">
-            <a class="link"
-                href="https://api.whatsapp.com/send?phone=34722201905&text=Hola,%20quiero%20consultar%20la%20disponibilidad%20en%20la%20taberna.%20"
-                target="_blank">
-                <img class="icon" src="img/whatsappg.svg" alt="">
-            </a>
-            <a class="link" href="mailto:elcorreoquequieres@correo.com">
-                <img class="icon" src="img/emailg.svg" alt=""></a>
-            <a class="link" href="tel:+34722201905"><img class="icon" src="img/phoneg.svg" alt=""></a>
-            <a class="link" href="https://www.booking.com/hotel/es/hostal-la-taverna.es.html"
-                target="_blank"><img class="icon" src="img/bookingg.svg" alt=""></a>
+
+            <img class="icon" src="img/whatsappg.svg" alt="">
+            <img class="icon" src="img/emailg.svg" alt="">
+            <img class="icon" src="img/phoneg.svg" alt="">
+            <img class="icon" src="img/bookingg.svg" alt="">
         </div>
 
 
@@ -374,4 +321,4 @@
     });
 </script>
 
-</html>
+</html>*/

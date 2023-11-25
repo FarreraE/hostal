@@ -23,6 +23,14 @@
 .body {
     background-color: var(--colorWhite);
     padding: 2%;
+    max-width: 1400px;
+    margin: auto;
+    .mobile {
+        display: block;
+    }
+    .desktop {
+        display: none;
+    }
     .home {
         // height: 100vh;
         display: flex;
@@ -253,6 +261,12 @@
         }
     }
     .servicios {
+        .mobile {
+            display: block;
+        }
+        .desktop {
+            display: none;
+        }
         .iconGroup {
             display: flex;
             flex-direction: row;
@@ -272,14 +286,17 @@
             background-color: rgba(218, 149, 40, 0.05);
             border-radius: 0.5rem;
             padding-bottom: 10%;
-            padding-top: 10%;
             margin-top: 20%;
+            box-shadow: 0px 10px 1em rgba(0, 0, 0, 0.2);
+
             h2 {
                 font-family: var(--font-Castoro);
                 color: var(--color60);
                 text-align: center;
                 font-size: 2rem;
                 font-weight: bold;
+                padding-top: 5%;
+                background-color: red;
             }
             p {
                 padding: 5%;
@@ -515,21 +532,22 @@
                     text-align: justify;
                 }
                 .contactoIcon {
-                    width: 100%;
                     display: flex;
                     justify-content: space-between;
-                    padding: 1%;
-                    padding-left: 5%;
-                    padding-right: 5%;
-                    border-radius: 0.5rem;
-
-                    .icon {
-                        width: 10%;
-                        opacity: 1;
-                    }
-                    .icon:hover {
-                        opacity: 1;
-                        scale: 1.2;
+                    margin: auto;
+                    align-items: center;
+                    padding: 0%;
+                    margin-top: 2%;
+                    .link {
+                        display: flex;
+                        justify-content: center;
+                        .icon {
+                            width: 30%;
+                            opacity: 0.5;
+                        }
+                        .icon:hover {
+                            opacity: 1;
+                        }
                     }
                 }
             }
@@ -655,13 +673,22 @@
 
         .contactoIcon {
             display: flex;
-            flex-direction: row;
             justify-content: space-between;
-            width: 80%;
-            margin-top: 0%;
-            .icon {
-                width: 10%;
-                opacity: 0.5;
+            margin: auto;
+            align-items: center;
+            padding: 0%;
+            margin-top: 2%;
+            width: 50%;
+            .link {
+                display: flex;
+                justify-content: center;
+                .icon {
+                    width: 50%;
+                    opacity: 0.5;
+                }
+                .icon:hover {
+                    opacity: 1;
+                }
             }
         }
     }
@@ -675,7 +702,6 @@ Vut La Taberna 1
 Vut Sorpresa Suite La Taberna
 Vut Lourdes
 */
-
 
 /*
 <body class="body">
