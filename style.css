@@ -417,7 +417,7 @@
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  padding-top: 5%;
+  padding-top: 10%;
 }
 
 .body .servicios .descripcionGeneral p {
@@ -621,7 +621,7 @@
   font-family: var(--font-Castoro);
   color: var(--color60);
   font-weight: bold;
-  font-size: 2.5em;
+  font-size: 2.1em;
 }
 
 .body .alojamientos p {
