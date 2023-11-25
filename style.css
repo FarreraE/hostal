@@ -1003,7 +1003,7 @@
     width: 60%;
   }
   .body .home .sectionB .mainInformation .botonGroup .contactoIcon {
-    width: 100%;
+    width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1013,10 +1013,10 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding-top: 5%;
+    padding-top: 7%;
   }
   .body .home .sectionB .mainInformation .botonGroup .contactoIcon .icon {
-    width: 40%;
+    width: 10%;
     opacity: 0.5;
   }
   .body .gallery {
@@ -1257,6 +1257,7 @@
   }
   .body .contacto .colB .btnContainer .CTAbtn {
     font-size: 1.2em;
+    padding-top: 5%;
   }
   .body footer nav {
     width: 80%;
